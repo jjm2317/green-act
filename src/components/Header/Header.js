@@ -33,7 +33,7 @@ const Header = () => {
           </div>
         </li>
         <li>
-          <div className="link-box">
+          <div className="link-box green">
             <a>회원가입</a>
           </div>
         </li>

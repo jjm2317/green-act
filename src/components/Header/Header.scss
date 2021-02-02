@@ -3,5 +3,53 @@
   height: 136px;
   min-width: 1000px;
   max-width: 1920px;
-  background-color: pink;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .appNavigation {
+    width: 25%;
+    height: 56px;
+
+    .menu__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      font-size: 1.6em;
+      font-weight: bold;
+    }
+  }
+
+  .member {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    width: 15.625%;
+    margin-right: 20px;
+
+    .link-box {
+      width: 144px;
+      height: 56px;
+      border-radius: 28px;
+      font-size: 1.6em;
+      text-align: center;
+    }
+    .link-box.green {
+      background-color: #71bd37;
+      color: #fff;
+    }
+    .link-box > a {
+      cursor: pointer;
+      padding: 20px;
+      line-height: 56px;
+      vertical-align: middle;
+    }
+  }
 }
