@@ -1,0 +1,38 @@
+.logArticle {
+  width: 91.667%;
+  height: 640px;
+  min-width: 1000px;
+  max-width: 1920px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  flex-flow: column nowrap;
+
+  .badge {
+     padding-bottom: 3em ;
+  }
+
+  .member {
+    color: rgb(56, 85, 62);
+    font-size: 1.7em;
+    font-style: normal;
+    text-align: center;
+    // font-weight: bold;
+    p {
+      padding: 0.3em;
+      display: block;
+    }
+    button {
+        font-size: 0.9em;
+        margin: 2em;
+        padding: 0.3em 5em;
+        border-radius:0.5em;
+        background-color: rgb(131, 202, 76);
+        color: white;
+    }
+  }
+    
+
+}
