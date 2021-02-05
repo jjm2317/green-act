@@ -11,28 +11,51 @@
   flex-flow: column nowrap;
 
   .badge {
-     padding-bottom: 3em ;
+    height: 20%;
   }
 
   .member {
-    color: rgb(56, 85, 62);
+    color: rgb(56, 92, 63);
     font-size: 1.7em;
     font-style: normal;
-    text-align: center;
-    // font-weight: bold;
-    p {
-      padding: 0.3em;
-      display: block;
-    }
-    button {
-        font-size: 0.9em;
-        margin: 2em;
-        padding: 0.3em 5em;
-        border-radius:0.5em;
-        background-color: rgb(131, 202, 76);
-        color: white;
-    }
-  }
+    text-align: center; 
     
+    button {
+      font-size: 1em;
+      margin: 2em;
+      padding: 1em 9em;
+      border-radius:5em;
+      background-color: rgb(131, 202, 76);
+      color: white;
+      border: none;
+      outline: none;
+    }
+    input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.01em solid #7ece92;
+    //outline: none;
+    }
+    input:focus {outline:none;}
+    form {
+        // height: 20%;
+        div {
+            margin: 1em 0;
+            // background-image: url( "blankRec.png" );
+        }
+        .text-box  {
+          border: 1px solid  #7ece92  !important; 
+          border-radius:5em;
+          padding: 1em 2em;
+        }
+    }
+    label{
+        margin-right: 1.7em;
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+      
+  }
 
 }
