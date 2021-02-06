@@ -1,0 +1,17 @@
+.login {
+  width: 91.667%;
+  min-width: 1000px;
+  max-width: 1920px;
+  height: 800px;
+  .link-box {
+    min-width: 144px;
+    height: 56px;
+    border-radius: 28px;
+    font-size: 1.6em;
+    text-align: center;
+  }
+  .link-box.green {
+    background-color: #71bd37;
+    color: #fff;
+  }
+}

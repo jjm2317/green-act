@@ -194,3 +194,15 @@ legend,
   clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
+/* 버튼 모듈화 */
+.link-box {
+  min-width: 144px;
+  height: 56px;
+  border-radius: 28px;
+  font-size: 1.6em;
+  text-align: center;
+}
+.link-box--green {
+  background-color: #71bd37;
+  color: #fff;
+}
