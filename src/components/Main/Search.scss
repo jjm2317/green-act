@@ -1,0 +1,52 @@
+.search {
+  // background-color: #ff0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 5em;
+  padding-left: 10em;
+  position: relative;
+  .main-logo {
+    width: 32.29vw;
+    max-width: 620px;
+    margin-right: 3em;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    &::after {
+      content: 'Green을 되찾는 정보를 나눕니다';
+      display: block;
+      font-size: 1.5em;
+    }
+  }
+  .main-visual {
+    max-width: 900px;
+    width: 46.875%;
+    margin-right: 15em;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .search-form {
+    display: flex;
+    width: 32.29vw;
+    max-width: 620px;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 230px;
+    input {
+      flex-grow: 1;
+      border-radius: 2em;
+      margin-right: 1em;
+    }
+    div > a {
+      line-height: 56px;
+    }
+  }
+}
