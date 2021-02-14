@@ -1,0 +1,44 @@
+.bestboard {
+  width: 91.667%;
+  height: 900px;
+  min-width: 1000px;
+  max-width: 1920px;
+  background: beige;
+  text-align: center;
+  .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 42px;
+  }
+  .subtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 117px;
+  }
+  .frame {
+    width: 100%;
+    height: 416px;
+    background: #e5e5e5;
+    .item {
+      width: 600px;
+      height: 356px;
+      background: white;
+      border-radius: 20px;
+      padding: 65px 67px 55px 91px;
+      margin: 30px;
+      display: flex;
+      float: left;
+    }
+    margin-bottom: 77px;
+  }
+  .button {
+    width: 593px;
+    height: 80px;
+    background: #71bd37;
+    border-radius: 40px;
+  }
+}
