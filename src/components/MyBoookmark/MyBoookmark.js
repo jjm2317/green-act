@@ -25,6 +25,9 @@ const MyProfile = () => {
         <a className="bookmarkPost">게시물 칸</a>
         <a className="bookmarkPost">게시물 칸</a>
         <a className="bookmarkPost">게시물 칸</a>
+        <a className="bookmarkPost">게시물 칸</a>
+        <a className="bookmarkPost">게시물 칸</a>
+        <a className="bookmarkPost">게시물 칸</a>
      </div>
 
      

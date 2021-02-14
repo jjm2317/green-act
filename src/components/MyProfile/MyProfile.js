@@ -14,13 +14,14 @@ const MyProfile = () => {
 
       {/*가로정렬*/}
       <div className="profile">      
-        <img src="/images/Mypage/mypageLogo.png" alt="green act" />
+        <img src="/images/Mypage/mypageLogo.png" alt="green act"/>
         <div className="introduc">
                 <div className="info">
                     <span className="nick>">Nich name</span>
                     <div>greenact@gmail.com</div>
                     <div>********</div>
                 </div>
+                <br/>
                 <div className="interest">
                     <span className="inter>">관심있는 분야</span>
                     <div>#분리수거</div>

@@ -42,12 +42,15 @@
         border-radius: 20px;
         padding: 3em 30em;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-flow: row wrap;
+
         .myPost{
-            text-align: left;
+          justify-content: left;
         }
-        .postModi {
-            text-align: right;
-        }
-    }
+        // .postModi {
+        //     text-align: right;
+      }
+}
   
-  }
+  

@@ -21,13 +21,15 @@ const MyPost = () => {
       </div>
 
      <div className="post">
-        <a className="myPost">분리배출Tip</a>
+        <span className="myPost">분리배출Tip</span>
+        <span className="myPost">게시글 첫 줄....</span>
+        <span className="myPost">수정</span>
      </div>
      <div className="post">
         <a className="myPost">분리배출Tip</a>
      </div>
      <div className="post">
-        <a className="myPost">분리배출Tip</a>
+        <span className="myPost">분리배출Tip</span>
      </div>
 
      
