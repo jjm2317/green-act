@@ -16,20 +16,23 @@ const MyPost = () => {
       <div className="nav">
         <span>카테고리 - </span>
         <span>전체</span>
-        <span className="navType"> ▾</span>
-        <span className="navModi"> 편집</span>
+        <span className="navType">&nbsp;&nbsp;▾</span>
       </div>
 
      <div className="post">
-        <span className="myPost">분리배출Tip</span>
-        <span className="myPost">게시글 첫 줄....</span>
-        <span className="myPost">수정</span>
+        <a className="postCate">게시판 카테고리</a>
+        <a className="postTitle">게시글 제목(이미지 있으면 같이 나오게 하기)</a>
+        {/* 수정 칸은 게시글페이지에만 있어도 될듯하여 일단 뺴두었음 */}
      </div>
      <div className="post">
-        <a className="myPost">분리배출Tip</a>
+        <a className="postCate">분리배출Tip</a>
+        <a className="postTitle">유리병 분리배출시 세척방법이 궁금해요</a>
      </div>
      <div className="post">
-        <span className="myPost">분리배출Tip</span>
+        <a className="postCate">분리배출Tip</a>
+        <a className="postTitle">유리병 분리배출시 세척방법이 궁금해요</a>
+        <a className="postImg">이미지</a>
+        <a className="postImg">이미지</a>
      </div>
 
      
