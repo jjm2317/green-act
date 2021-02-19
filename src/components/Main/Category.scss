@@ -1,0 +1,17 @@
+.category {
+  width: 100%;
+  min-width: 1000px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  .category-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+  }
+}
