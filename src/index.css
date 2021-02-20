@@ -185,6 +185,16 @@ a:hover,
 a:focus {
   color: #f00;
 }
+@media only screen and (max-width: 1000px) {
+  .appMain section {
+    font-size: 10px !important;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .appMain section {
+    font-size: 15px !important;
+  }
+}
 legend,
 .a11yHidden {
   position: absolute;

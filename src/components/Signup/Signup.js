@@ -1,7 +1,7 @@
 import React from 'react';
 import './SignUp.scss';
 
-const Login = () => {
+const SignUp = () => {
   return (
     <section className="signup">
       <h2 className="signup-heading">회원가입</h2>
@@ -78,4 +78,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
