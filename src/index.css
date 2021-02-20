@@ -206,7 +206,7 @@ legend,
 }
 /* 버튼 모듈화 */
 .link-box {
-  min-width: 6em;
+  width: 6em;
   height: 2.5em;
   border-radius: 1.5em;
   font-size: 1.5em;
