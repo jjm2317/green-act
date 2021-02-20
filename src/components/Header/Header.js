@@ -28,7 +28,7 @@ const Header = () => {
       </nav>
       <ul className="member">
         <li>
-          <div className="link-box">
+          <div className="link-box link-box--default">
             <a>로그인</a>
           </div>
         </li>

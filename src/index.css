@@ -186,13 +186,13 @@ a:focus {
   color: #f00;
 }
 @media only screen and (max-width: 1000px) {
-  .appMain section {
+  .appMain section , .appHeader {
     font-size: 10px !important;
   }
 }
 @media only screen and (min-width: 1001px) {
-  .appMain section {
-    font-size: 15px !important;
+  .appMain section, .appHeader {
+    font-size: 12px !important;
   }
 }
 legend,
@@ -206,13 +206,22 @@ legend,
 }
 /* 버튼 모듈화 */
 .link-box {
-  min-width: 144px;
-  height: 56px;
-  border-radius: 28px;
-  font-size: 1.6em;
+  min-width: 6em;
+  height: 2.5em;
+  border-radius: 1.5em;
+  font-size: 1.5em;
+  font-weight: 700;
   text-align: center;
+}
+.link-box a{
+  line-height: 2.5em;
 }
 .link-box--green {
   background-color: #71bd37;
   color: #fff;
+}
+
+.link-box--default {
+  
+  background-color: #eeeeee;
 }
