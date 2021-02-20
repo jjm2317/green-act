@@ -23,20 +23,9 @@ const App = () => {
     // 보이게 하기
     <Container>
       <Header />
-      <Login />
+      <Main />
       <Footer />
-      <Header />
-      <SignUp />
-      <Footer />
-      <Header />
-      <MyProfile />
-      <Footer />
-      <Header />
-      <MyBoookmark />
-      <Footer />
-      <Header />
-      <MyPost />
-      <Footer />
+    </Container>
     </Container>
 
 
