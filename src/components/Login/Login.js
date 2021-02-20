@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <section className="login">
       <h2 className="login-logo">
-        <img src="/images/loginLogo.png" alt="green act" />
+        <img src="/images/logLogo.png" alt="green act" />
       </h2>
       <form action="#" class="login-form" method="POST">
         <fieldset>
