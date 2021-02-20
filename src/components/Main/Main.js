@@ -4,6 +4,7 @@ import SignUp from '../SignUp/SignUp';
 import Bestboard from './Bestboard';
 import Category from './Category';
 import './Main.scss';
+import News from './News';
 import Recycle from './Recycle';
 import Search from './Search';
 
@@ -14,6 +15,7 @@ const Main = ({ children }) => {
       <Category />
       <Recycle />
       <Bestboard />
+      <News />
       {/* <Login></Login> */}
       {/* <SignUp></SignUp> */}
     </main>
