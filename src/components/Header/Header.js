@@ -1,13 +1,15 @@
 import React from 'react';
 import './Header.scss';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Header = () => {
   return (
+
     <header className="appHeader">
       <h1 className="logo">
-        <a href="index.html">
+        <Link to = '/Main'>
           <img src="/images/logo.png" alt="green Act" />
-        </a>
+        </Link>
       </h1>
       <nav className="appNavigation menu">
         <h2 className="a11yHidden">메인 메뉴</h2>
@@ -29,16 +31,19 @@ const Header = () => {
       <ul className="member">
         <li>
           <div className="link-box">
-            <a>로그인</a>
+            <Link to='/Login'>로그인</Link>
           </div>
         </li>
         <li>
           <div className="link-box link-box--green">
-            <a>회원가입</a>
+            <Link to='/Signup'>회원가입</Link>
           </div>
         </li>
       </ul>
+
     </header>
+
+
   );
 };
 

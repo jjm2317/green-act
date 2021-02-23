@@ -7,8 +7,11 @@ import './Main.scss';
 import Recycle from './Recycle';
 import Search from './Search';
 
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 const Main = ({ children }) => {
   return (
+    <Router>
     <main className="appMain">
       <Search />
       <Category />
@@ -16,7 +19,9 @@ const Main = ({ children }) => {
       <Bestboard />
       {/* <Login></Login> */}
       {/* <SignUp></SignUp> */}
+
     </main>
+    </Router>
   );
 };
 

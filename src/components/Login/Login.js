@@ -30,7 +30,7 @@ const Login = () => {
               required
             />
           </div>
-          <button className="link-box link-box--green" type="submmit">
+          <button className="link-box link-box--green" type="submit">
             LOGIN
           </button>
         </fieldset>
