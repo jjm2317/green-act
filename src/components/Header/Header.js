@@ -2,13 +2,11 @@ import React from 'react';
 import './Header.scss';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-
 const Header = () => {
   return (
-
     <header className="appHeader">
       <h1 className="logo">
-        <Link to = '/Main'>
+        <Link to="/">
           <img src="/images/logo.png" alt="green Act" />
         </Link>
       </h1>
@@ -32,19 +30,16 @@ const Header = () => {
       <ul className="member">
         <li>
           <div className="link-box link-box--default">
-            <Link to='/Login'>로그인</Link>
+            <Link to="/Login">로그인</Link>
           </div>
         </li>
         <li>
           <div className="link-box link-box--green">
-            <Link to='/Signup'>회원가입</Link>
+            <Link to="/Signup">회원가입</Link>
           </div>
         </li>
       </ul>
-
     </header>
-
-
   );
 };
 
