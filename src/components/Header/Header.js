@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.scss';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+
 const Header = () => {
   return (
 
@@ -30,7 +31,7 @@ const Header = () => {
       </nav>
       <ul className="member">
         <li>
-          <div className="link-box">
+          <div className="link-box link-box--default">
             <Link to='/Login'>로그인</Link>
           </div>
         </li>

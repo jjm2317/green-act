@@ -3,9 +3,11 @@ import Container from './components/Container';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
 import Main from './components/Main/Main';
 import Signup from './components/SignUp/SignUp'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 console.log(Header);
 const App = () => {
@@ -20,7 +22,7 @@ const App = () => {
       </Switch>
       <Footer />
     </Container>
-    </Router>
+   </Router>
   );
 };
 

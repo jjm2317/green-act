@@ -1,4 +1,4 @@
-.login {
+.signup {
   width: 91.667%;
   min-width: 1000px;
   max-width: 1920px;
@@ -10,21 +10,52 @@
   padding: 0;
   margin: 0;
 
-  .login-logo {
-    margin-bottom: 3vh;
-    img {
-      max-width: 200px;
-      min-width: 180px;
-      max-height: 80px;
-      width: 10.417vw;
-      display: block;
-    }
+  .signup-heading {
+    font-size: 2.5em;
+    color: #1d4c23;
   }
 
-  .login-form {
+  .signup-form {
     fieldset {
       border: none;
-      margin-top: 10px;
+    }
+    .user-nickname {
+      width: 20.469vw;
+      min-width: 300px;
+      height: 60px;
+      border: 1px solid #71bd37;
+      border-radius: 30px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: 800;
+
+      label {
+        margin-left: 1.5vw;
+        white-space: nowrap;
+        width: 50px;
+      }
+      &::before {
+        content: '';
+
+        display: block;
+
+        order: 1;
+        margin: 0 2em;
+        width: 0px;
+        height: 0px;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-right: 14px solid none;
+        border-left: 14px solid #71bd37;
+      }
+      input {
+        order: 2;
+        border: none;
+        background: none;
+      }
     }
     .user-email {
       width: 20.469vw;
@@ -103,6 +134,45 @@
         background: none;
       }
     }
+    .check-user-password {
+      width: 20.469vw;
+      min-width: 300px;
+      height: 60px;
+      border: 1px solid #71bd37;
+      border-radius: 30px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: 800;
+      margin-top: 1vh;
+      margin-bottom: 4vh;
+      label {
+        margin-left: 1.5vw;
+        white-space: nowrap;
+        width: 50px;
+      }
+      &::before {
+        content: '';
+
+        display: block;
+
+        order: 1;
+        margin: 0 2em;
+        width: 0px;
+        height: 0px;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-right: 14px solid none;
+        border-left: 14px solid #71bd37;
+      }
+      input {
+        order: 2;
+        border: none;
+        background: none;
+      }
+    }
     button {
       width: 20.469vw;
       min-width: 300px;
@@ -115,7 +185,7 @@
     display: flex;
     justify-content: center;
     li:nth-child(1) {
-      margin-left: -2vw;
+      margin-left: -4vw;
     }
     .divider {
       display: inline-block;
