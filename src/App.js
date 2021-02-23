@@ -5,31 +5,24 @@ import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import Main from './components/Main/Main';
-import MyBoookmark from './components/MyBoookmark/MyBoookmark';
-import MyPost from './components/MyPost/MyPost';
-import MyProfile from './components/MyProfile/MyProfile';
-// import Main from './components/Main/Main';
+import Signup from './components/SignUp/SignUp'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 console.log(Header);
 const App = () => {
   return (
-    
-    // <Container>
-    //   <Header />
-    //   <Main />
-    //   <Footer />
-    // </Container>
-
-    // 보이게 하기
+    <Router>
     <Container>
       <Header />
-      <Main />
+      <Switch>
+      <Route path='/Main' component={Main}/>
+      <Route path='/Login' component={Login}/>
+      <Route path='/Signup' component={Signup}/>
+      </Switch>
       <Footer />
     </Container>
-    </Container>
-
-
-    
+   </Router>
   );
 };
 
