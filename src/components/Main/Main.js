@@ -7,12 +7,11 @@ import './Main.scss';
 import News from './News';
 import Recycle from './Recycle';
 import Search from './Search';
-
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Main = ({ children }) => {
   return (
-    <Router>
+    // <Router>
     <main className="appMain">
       <Search />
       <Category />
@@ -21,9 +20,8 @@ const Main = ({ children }) => {
       <News />
       {/* <Login></Login> */}
       {/* <SignUp></SignUp> */}
-
     </main>
-    </Router>
+    // </Router>
   );
 };
 
