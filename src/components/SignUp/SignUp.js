@@ -1,7 +1,7 @@
 import React from 'react';
-import './SignUp.scss';
+import './Signup.scss';
 
-const Login = () => {
+const Signup = () => {
   return (
     <section className="signup">
       <h2 className="signup-heading">회원가입</h2>
@@ -58,7 +58,7 @@ const Login = () => {
               required
             />
           </div>
-          <button className="link-box link-box--green" type="submmit">
+          <button className="link-box link-box--green" type="submit">
             완료
           </button>
         </fieldset>
@@ -78,4 +78,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

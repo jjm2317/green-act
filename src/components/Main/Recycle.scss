@@ -1,0 +1,18 @@
+.recycle {
+  max-width: 1000px;
+  min-width: 600px;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 1000px;
+  }
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  img {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+}
