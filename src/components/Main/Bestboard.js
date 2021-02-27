@@ -1,5 +1,7 @@
 import React from 'react';
 import './Bestboard.scss';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 const Bestboard = () => {
   return (
     <div className="bestboard">
@@ -12,7 +14,9 @@ const Bestboard = () => {
       <div className="item"></div>
       <div className="item"></div>
       </div>
+      <Link to='/board'>
       <div className="button">게시판 바로가기</div>
+      </Link>
     </div>
   );
 };
