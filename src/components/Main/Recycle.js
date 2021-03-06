@@ -3,6 +3,7 @@ import './Recycle.scss';
 import PlasticImage from '../../images/recyclePlastic.png';
 import CanImage from '../../images/recycleCan.png';
 import PaperImage from '../../images/recyclePaper.png';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Recycle = () => {
     return (
@@ -17,13 +18,19 @@ const Recycle = () => {
             <div className="right-section">
                 <ul className="recycle-list">
                     <li className="recycle-item">
+                        <Link to="/Recycle/Plastic">
                         <img src={PlasticImage} alt="플라스틱류" />
+                        </Link>
                     </li>
                     <li className="recycle-item">
+                        <Link to="/Recycle/Can">
                         <img src={CanImage} alt="캔류" />
+                        </Link>
                     </li>
                     <li className="recycle-item">
+                        <Link to="/Recycle/Paper">
                         <img src={PaperImage} alt="종이류" />
+                        </Link>
                     </li>
                 </ul>
             </div>
