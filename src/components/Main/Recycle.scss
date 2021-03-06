@@ -16,7 +16,8 @@
     width: 15rem;
     height: 20rem;
 
-    //display: flex;
+    display: flex;
+    flex-direction: column;
     //justify-content: center;
 
     .recycle-title {
@@ -47,7 +48,7 @@
   width: 100rem;
 
   .recycle-list {
-    width: 50rem;
+    //width: 50rem;
     display: flex;
     flex-flow: row nowrap;
 
