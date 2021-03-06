@@ -1,6 +1,6 @@
 import React from 'react';
 import Login from '../Login/Login';
-import Signup from '../SignUp/Signup';
+import SignUp from '../SignUp/SignUp';
 import Bestboard from './Bestboard';
 import Category from './Category';
 import './Main.scss';
