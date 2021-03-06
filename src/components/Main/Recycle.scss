@@ -1,18 +1,65 @@
 .recycle {
   max-width: 1000px;
   min-width: 600px;
+  width: 100%;
+  display: flex;
+  margin-left: 25rem;
+
   &::before {
     content: '';
-    display: inline-block;
+    position: absolute;
+    display: inline;
     width: 1000px;
   }
-  ul {
+
+  .left-section {
+    width: 15rem;
+    height: 20rem;
+
+    //display: flex;
+    //justify-content: center;
+
+    .recycle-title {
+      height: 3rem;
+      font-size: 2.5rem;
+      color: #1D4C23;
+    }
+
+    .arrow-buttons {
+      width: 5rem;
+      height: 3rem;
+      display: inline-block;
+
+      .left-button {
+        font-size: 2rem;
+        display: inline;
+        margin-right: 1rem;
+      }
+
+      .right-button {
+        font-size: 2rem;
+        display: inline;
+      }
+    }
+  }
+
+.right-section {
+  width: 100rem;
+
+  .recycle-list {
+    width: 50rem;
     display: flex;
     flex-flow: row nowrap;
-  }
-  img {
-    display: block;
-    width: 200px;
-    height: 200px;
+
+    list-style: none;
+
+    img {
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
   }
 }
+
+  }
+
