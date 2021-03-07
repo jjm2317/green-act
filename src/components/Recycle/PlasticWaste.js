@@ -3,7 +3,7 @@ import './PlasticWaste.scss';
 
 const PlasticWaste = () => {
   return (
-    <div>plastic waste</div>
+    <section className="PlasticWaste">plastic waste</section>
   );
 };
 
