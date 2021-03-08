@@ -2,6 +2,13 @@ import React from 'react';
 import './News.scss';
 
 const News = () => {
+  const getNews = () => {
+    fetch('http://localhost:4000/test')
+      .then((response) => response.json())
+      .then(console.log);
+  };
+  getNews();
+
   return (
     <section className="news">
       <h2 className="news-heading">뉴스</h2>
