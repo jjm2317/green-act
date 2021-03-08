@@ -12,7 +12,7 @@ export const changeField = createAction(
   })
 );
 
-export const initalizeForm = createAction(INITIALIZE_FORM, (form) => form);
+export const initializeForm = createAction(INITIALIZE_FORM, (form) => form);
 
 const initialState = {
   register: {
@@ -28,7 +28,14 @@ const initialState = {
 
 const auth = handleActions(
   {
-    [CHANGE_FIELD]: (state, { payload: { form, key, value } }) => {},
+    [CHANGE_FIELD]: (state, { payload: { form, key, value } }) => ({
+      ...state,
+      ...{ [`${state[form][key]}`]: value },
+    }),
+    [INITIALIZE_FORM]: (state, { payload: form }) => ({
+      ...state,
+      [form]: initialState[form],
+    }),
   },
   initialState
 );
