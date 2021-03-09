@@ -1,13 +1,14 @@
 import React from 'react';
 import './Login.scss';
 
-const Login = () => {
+const Login = ({ form, onChange, onSubmit }) => {
+  console.log(form, onSubmit);
   return (
     <section className="login">
       <h2 className="login-logo">
         <img src="/images/logLogo.png" alt="green act" />
       </h2>
-      <form action="#" class="login-form" method="POST">
+      <form onSubmit={onSubmit} class="login-form" method="POST">
         <fieldset>
           <legend>회원 로그인 폼</legend>
           <div className="user-email">
@@ -18,6 +19,8 @@ const Login = () => {
               id="user-email"
               placeholder="OOOOO@mail.com"
               required
+              onChange={onChange}
+              value={form.username}
             />
           </div>
           <div className="user-password">
@@ -28,6 +31,8 @@ const Login = () => {
               id="user-password"
               placeholder="********"
               required
+              onChange={onChange}
+              value={form.password}
             />
           </div>
           <button className="link-box link-box--green" type="submit">
