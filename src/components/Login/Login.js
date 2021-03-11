@@ -16,7 +16,7 @@ const Login = ({ type, form, onChange, onSubmit }) => {
             <label htmlFor="user-email">이메일</label>
             <input
               type="email"
-              name="user-email"
+              name="username"
               id="user-email"
               placeholder="OOOOO@mail.com"
               required
@@ -28,7 +28,7 @@ const Login = ({ type, form, onChange, onSubmit }) => {
             <label htmlFor="user-password">비밀번호</label>
             <input
               type="password"
-              name="user-password"
+              name="password"
               id="user-password"
               placeholder="********"
               required
