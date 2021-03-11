@@ -28,13 +28,10 @@ const initialState = {
 
 const auth = handleActions(
   {
-    [CHANGE_FIELD]: (state, { payload: { form, key, value } }) => {
-      console.log(state, form, key, value);
-      return {
-        ...state,
-        [form]: { ...state[form], [key]: value },
-      };
-    },
+    [CHANGE_FIELD]: (state, { payload: { form, key, value } }) => ({
+      ...state,
+      [form]: { ...state[form], [key]: value },
+    }),
     [INITIALIZE_FORM]: (state, { payload: form }) => ({
       ...state,
       [form]: initialState[form],
