@@ -1,33 +1,39 @@
 import React from 'react';
 import './Login.scss';
 
-const Login = () => {
+const Login = ({ type, form, onChange, onSubmit }) => {
+  console.log(form, onSubmit, type);
+  console.log(onChange);
   return (
     <section className="login">
       <h2 className="login-logo">
         <img src="/images/logLogo.png" alt="green act" />
       </h2>
-      <form action="#" class="login-form" method="POST">
+      <form onSubmit={onSubmit} className="login-form" method="POST">
         <fieldset>
           <legend>회원 로그인 폼</legend>
           <div className="user-email">
-            <label for="user-email">이메일</label>
+            <label htmlFor="user-email">이메일</label>
             <input
               type="email"
-              name="user-email"
+              name="username"
               id="user-email"
               placeholder="OOOOO@mail.com"
               required
+              onChange={onChange}
+              value={form.username}
             />
           </div>
           <div className="user-password">
-            <label for="user-password">비밀번호</label>
+            <label htmlFor="user-password">비밀번호</label>
             <input
               type="password"
-              name="user-password"
+              name="password"
               id="user-password"
               placeholder="********"
               required
+              onChange={onChange}
+              value={form.password}
             />
           </div>
           <button className="link-box link-box--green" type="submit">

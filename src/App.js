@@ -6,7 +6,9 @@ import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import Main from './components/Main/Main';
 import Bestboard from './components/Main/Bestboard';
+import PlasticWaste from './components/Recycle/PlasticWaste';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import LoginForm from './containers/auth/LoginForm';
 
 console.log(Header);
 const App = () => {
@@ -16,9 +18,10 @@ const App = () => {
         <Header />
         <Route exact path="/" component={Main} />
         <Switch>
-          <Route path="/Login" component={Login} />
+          <Route path="/Login" component={LoginForm} />
           <Route path="/SignUp" component={SignUp} />
           <Route path="/board" component={Bestboard} />
+          <Route path="/Recycle/Plastic" component={PlasticWaste} />
         </Switch>
         <Footer />
       </Container>
