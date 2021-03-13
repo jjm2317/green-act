@@ -18,42 +18,42 @@ const Recycle = () => {
             <div className="right-section">
                 <ul className="recycle-list">
                     <li className="recycle-item">
-                        <Link to="/Recycle/Plastic">
+                        <Link to="/recycle/PlasticWaste">
                            <img src={PlasticImage} alt="플라스틱류" />
                         </Link>
                     </li>
                     <li className="recycle-item">
-                        <Link to="/Recycle/Can">
+                        <Link to="/recycle/CannedGarbage">
                            <img src={CanImage} alt="캔류" />
                         </Link>
                     </li>
                     <li className="recycle-item">
-                        <Link to="/Recycle/Paper">
+                        <Link to="/recycle/PaperWaste">
                            <img src={PaperImage} alt="종이류" />
                         </Link>
                     </li>
                     <li className="recycle-item">
-                        <Link to="/Recycle/Paper">
+                        <Link to="/recycle/GlassTrash">
                             <img src={PaperImage} alt="유리병" />
                         </Link>
                     </li>
                     <li className="recycle-item">
-                        <Link to="/Recycle/Paper">
+                        <Link to="/recycle/GeneralWaste">
                             <img src={PaperImage} alt="일반쓰레기" />
                         </Link>
                     </li>
                     <li className="recycle-item">
-                        <Link to="/Recycle/Paper">
+                        <Link to="recycle/StyrofoamTrash">
                             <img src={PaperImage} alt="스티로폼" />
                         </Link>
                     </li>
                     <li className="recycle-item">
-                        <Link to="/Recycle/Paper">
+                        <Link to="recycle/PlasticBags">
                             <img src={PaperImage} alt="비닐류" />
                         </Link>
                     </li>
                     <li className="recycle-item">
-                        <Link to="/Recycle/Paper">
+                        <Link to="recycle/FoodWaste">
                             <img src={PaperImage} alt="음식물쓰레기" />
                         </Link>
                     </li>
