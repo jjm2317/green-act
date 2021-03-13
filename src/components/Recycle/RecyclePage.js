@@ -1,6 +1,6 @@
 import React from 'react';
 import './RecyclePage.scss';
-import { BrowserRouter as Link, Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import LoginForm from '../../containers/auth/LoginForm';
 import GeneralWaste from './GeneralWaste';
 import GeneralWasteImage from "../../images/recycleMenu_generalWaste.png"
@@ -17,7 +17,7 @@ const RecyclePage = () => {
     <section className = "RecyclePage">
       <ul className= "menu-list">
         <li className= "menu-item">
-        <Link to="recycle/GeneralWaste">
+        <Link to='recycle/GeneralWaste'>
         <img src={GeneralWasteImage} alt="generalWaste"/>
         </Link>
         </li>
