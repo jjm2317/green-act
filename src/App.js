@@ -9,6 +9,7 @@ import Bestboard from './components/Main/Bestboard';
 import PlasticWaste from './components/Recycle/PlasticWaste';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LoginForm from './containers/auth/LoginForm';
+import RecyclePage from './components/Recycle/RecyclePage';
 
 console.log(Header);
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/SignUp" component={SignUp} />
           <Route path="/board" component={Bestboard} />
           <Route path="/Recycle/Plastic" component={PlasticWaste} />
+          <Route path="/recycle" component={RecyclePage}/>
         </Switch>
         <Footer />
       </Container>
