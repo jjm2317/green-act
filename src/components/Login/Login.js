@@ -2,8 +2,6 @@ import React from 'react';
 import './Login.scss';
 
 const Login = ({ type, form, onChange, onSubmit }) => {
-  console.log(form, onSubmit, type);
-  console.log(onChange);
   return (
     <section className="login">
       <h2 className="login-logo">

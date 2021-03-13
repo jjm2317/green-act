@@ -1,12 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-<<<<<<< HEAD
-import { changeField, initializeForm } from '../../modules/atuh';
-
-=======
 import { changeField, initializeForm } from '../../modules/auth';
 import Login from '../../components/Login/Login';
->>>>>>> 34c5b6d33386245acb26e2b2bb8da892bf6e9cb7
 const LoginForm = () => {
   console.log('loginform start');
   const dispatch = useDispatch();
@@ -27,8 +22,12 @@ const LoginForm = () => {
     );
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
+
+    const response = await fetch('http://localhost:4000/login');
+
+    console.log(response.body);
   };
 
   useEffect(() => {
