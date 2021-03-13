@@ -1,0 +1,45 @@
+.RecyclePage{
+  max-width: 1000px;
+  min-width: 600px;
+  width: 100%;
+  height: 140rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background-color: #FCFCFC;
+
+  .menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 30%;
+    height: 100%;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    .menu-item{
+      display: flex;
+      width: 15em;
+      height: 15rem;
+      margin-bottom: 2.5rem;
+
+      img{
+        display: block;
+        width: 15em;
+        height: 15rem;
+
+      }
+    }
+
+  }
+  .description{
+    //display: inline-block;
+    width: 70%;
+    height: 100%;
+    background-color: yellow;
+  }
+}
