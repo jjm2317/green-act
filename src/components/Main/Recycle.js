@@ -19,17 +19,42 @@ const Recycle = () => {
                 <ul className="recycle-list">
                     <li className="recycle-item">
                         <Link to="/Recycle/Plastic">
-                        <img src={PlasticImage} alt="플라스틱류" />
+                           <img src={PlasticImage} alt="플라스틱류" />
                         </Link>
                     </li>
                     <li className="recycle-item">
                         <Link to="/Recycle/Can">
-                        <img src={CanImage} alt="캔류" />
+                           <img src={CanImage} alt="캔류" />
                         </Link>
                     </li>
                     <li className="recycle-item">
                         <Link to="/Recycle/Paper">
-                        <img src={PaperImage} alt="종이류" />
+                           <img src={PaperImage} alt="종이류" />
+                        </Link>
+                    </li>
+                    <li className="recycle-item">
+                        <Link to="/Recycle/Paper">
+                            <img src={PaperImage} alt="유리병" />
+                        </Link>
+                    </li>
+                    <li className="recycle-item">
+                        <Link to="/Recycle/Paper">
+                            <img src={PaperImage} alt="일반쓰레기" />
+                        </Link>
+                    </li>
+                    <li className="recycle-item">
+                        <Link to="/Recycle/Paper">
+                            <img src={PaperImage} alt="스티로폼" />
+                        </Link>
+                    </li>
+                    <li className="recycle-item">
+                        <Link to="/Recycle/Paper">
+                            <img src={PaperImage} alt="비닐류" />
+                        </Link>
+                    </li>
+                    <li className="recycle-item">
+                        <Link to="/Recycle/Paper">
+                            <img src={PaperImage} alt="음식물쓰레기" />
                         </Link>
                     </li>
                 </ul>
