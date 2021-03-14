@@ -10,6 +10,7 @@ import PlasticWaste from './components/Recycle/PlasticWaste';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LoginForm from './containers/auth/LoginForm';
 import RecyclePage from './components/Recycle/RecyclePage';
+import GeneralWaste from './components/Recycle/GeneralWaste';
 
 console.log(Header);
 const App = () => {
