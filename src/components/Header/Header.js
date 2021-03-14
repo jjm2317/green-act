@@ -14,7 +14,7 @@ const Header = () => {
         <h2 className="a11yHidden">메인 메뉴</h2>
         <ul className="menu__list">
           <li className="menu__item">
-            <Link to="/recycle">분리수거</Link>
+            <Link to="/recycle/GeneralWaste">분리수거</Link>
           </li>
           <li className="menu__item">
             <a href="#">게시판</a>
