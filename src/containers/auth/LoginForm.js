@@ -25,8 +25,13 @@ const LoginForm = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://localhost:4000/login');
+    console.log(form);
 
+    const response = await fetch('http://localhost:4000/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    });
     console.log(response.body);
   };
 
