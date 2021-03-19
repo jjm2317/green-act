@@ -23,20 +23,15 @@ const SignUpForm = () => {
     );
   };
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
-  }
+  };
 
   useEffect(() => {
     dispatch(initializeForm('signUp'));
   }, [dispatch]);
 
   return (
-    <SignUp
-      type="signUp",
-      form={form},
-      onChange={onChange},
-      onSubmit={onSubmit}
-    />
-  )
+    <SignUp type="signUp" form={form} onChange={onChange} onSubmit={onSubmit} />
+  );
 };
