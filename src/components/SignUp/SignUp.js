@@ -6,7 +6,7 @@ const SignUp = ({ type, form, onChange, onSubmit }) => {
   return (
     <section className="signup">
       <h2 className="signup-heading">회원가입</h2>
-      <form action="#" class="signup-form" method="POST">
+      <form action="#" className="signup-form" onSubmit={onSubmit}>
         <fieldset>
           <legend>회원가입 폼</legend>
           <div className="user-nickname">
