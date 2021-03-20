@@ -16,9 +16,11 @@ export const initializeForm = createAction(INITIALIZE_FORM, (form) => form);
 
 const initialState = {
   signUp: {
+    nickname: '',
     username: '',
     password: '',
     passwordConfirm: '',
+    interest: '',
   },
   login: {
     username: '',

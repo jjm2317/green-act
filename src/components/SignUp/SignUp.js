@@ -13,9 +13,11 @@ const SignUp = ({ type, form, onChange, onSubmit }) => {
             <label htmlFor="user-nickname">닉네임</label>
             <input
               type="text"
-              name="user-nickname"
+              name="nickname"
               id="user-nickname"
               placeholder="OOOOO"
+              onChange={onChange}
+              value={form.nickname}
               required
             />
           </div>
@@ -23,9 +25,11 @@ const SignUp = ({ type, form, onChange, onSubmit }) => {
             <label htmlFor="user-email">이메일</label>
             <input
               type="email"
-              name="user-email"
+              name="username"
               id="user-email"
               placeholder="OOOOO@mail.com"
+              onChange={onChange}
+              value={form.username}
               required
             />
           </div>
@@ -33,29 +37,35 @@ const SignUp = ({ type, form, onChange, onSubmit }) => {
             <label htmlFor="user-password">비밀번호</label>
             <input
               type="password"
-              name="user-password"
+              name="password"
               id="user-password"
               placeholder="********"
+              onChange={onChange}
+              value={form.password}
               required
             />
           </div>
           <div className="check-user-password">
-            <label for="check-user-password">비밀번호 확인</label>
+            <label htmlFor="check-user-password">비밀번호 확인</label>
             <input
               type="password"
-              name="check-user-password"
+              name="passwordConfirm"
               id="check-user-password"
               placeholder="********"
+              onChange={onChange}
+              value={form.passwordConfirm}
               required
             />
           </div>
           <div className="user-interests">
-            <label for="check-user-password">관심분야</label>
+            <label htmlFor="check-user-password">관심분야</label>
             <input
               type="radio"
-              name="check-user-password"
+              name="interest"
               id="check-user-password"
               placeholder="********"
+              onChange={onChange}
+              value={form.interests}
               required
             />
           </div>
