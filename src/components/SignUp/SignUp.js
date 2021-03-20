@@ -1,7 +1,8 @@
 import React from 'react';
 import './SignUp.scss';
 
-const SignUp = () => {
+const SignUp = ({ type, form, onChange, onSubmit }) => {
+  console.log(form);
   return (
     <section className="signup">
       <h2 className="signup-heading">회원가입</h2>
@@ -9,7 +10,7 @@ const SignUp = () => {
         <fieldset>
           <legend>회원가입 폼</legend>
           <div className="user-nickname">
-            <label for="user-nickname">닉네임</label>
+            <label htmlFor="user-nickname">닉네임</label>
             <input
               type="text"
               name="user-nickname"
@@ -19,7 +20,7 @@ const SignUp = () => {
             />
           </div>
           <div className="user-email">
-            <label for="user-email">이메일</label>
+            <label htmlFor="user-email">이메일</label>
             <input
               type="email"
               name="user-email"
@@ -29,7 +30,7 @@ const SignUp = () => {
             />
           </div>
           <div className="user-password">
-            <label for="user-password">비밀번호</label>
+            <label htmlFor="user-password">비밀번호</label>
             <input
               type="password"
               name="user-password"

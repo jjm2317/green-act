@@ -35,3 +35,5 @@ const SignUpForm = () => {
     <SignUp type="signUp" form={form} onChange={onChange} onSubmit={onSubmit} />
   );
 };
+
+export default SignUpForm;
