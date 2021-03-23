@@ -1,5 +1,9 @@
 import { createAction, handleActions } from 'redux-actions';
-import { createRequestActionTypes } from '../lib/createRequestSaga';
+import { takeLatest } from 'redux-saga/effects';
+import createRequestSaga, {
+  createRequestActionTypes,
+} from '../lib/createRequestSaga';
+import * as authAPI from '../lib/api/auth';
 
 const CHANGE_FIELD = 'auth/CHANGE_FIELD';
 const INITIALIZE_FORM = 'auth/INITIALIZE_FORM';
@@ -29,6 +33,27 @@ export const changeField = createAction(
 );
 
 export const initializeForm = createAction(INITIALIZE_FORM, (form) => form);
+export const signUp = createAction(
+  SIGNUP,
+  ({ nickname, username, password, interest }) => ({
+    nickname,
+    username,
+    password,
+    interest,
+  })
+);
+export const login = createAction(LOGIN, ({ username, password }) => ({
+  username,
+  password,
+}));
+
+const signUpSaga = createRequestSaga(SIGNUP, authAPI.signUp);
+const loginSaga = createRequestSaga(LOGIN, authAPI.login);
+
+export function* authSaga() {
+  yield takeLatest(SIGNUP, signUpSaga);
+  yield takeLatest(LOGIN, loginSaga);
+}
 
 const initialState = {
   signUp: {
@@ -42,6 +67,8 @@ const initialState = {
     username: '',
     password: '',
   },
+  auth: null,
+  authError: null,
 };
 
 const auth = handleActions(
@@ -53,7 +80,10 @@ const auth = handleActions(
     [INITIALIZE_FORM]: (state, { payload: form }) => ({
       ...state,
       [form]: initialState[form],
+      authError: null,
     }),
+
+    // [SIGNUP_SUCCESS]:
   },
   initialState
 );
