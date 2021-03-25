@@ -12,14 +12,11 @@ const TEMP_SET_USER = 'user/TEMP_SET_USER'; // 새로고침 이후 임시 로그
 const [CHECK, CHECK_SUCCESS, CHECK_FAILURE] = createRequestActionTypes(
   'user/CHECK'
 );
-const [CHECK, CHECK_SUCCESS, CHECK_FAILURE] = createRequestActionTypes(
-  'user/CHECK'
-);
 
 export const tempSetUser = createAction(TEMP_SET_USER, (user) => user);
 export const check = createAction(CHECK);
 
-const checkSaga = createRequestSaga(CHECK, authAPI.check);
+const checkSaga = createRequestSaga(CHECK, authAPI.loginCheck);
 export function* userSaga() {
   yield takeLatest(CHECK, checkSaga);
 }
