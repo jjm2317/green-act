@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useImperativeHandle } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeField, initializeForm, signUp } from '../../modules/auth';
 import SignUp from '../../components/SignUp/SignUp';
+import { check } from '../../modules/user';
 
 const SignUpForm = () => {
   const dispatch = useDispatch();
   //useSelector: 리덕스의 상태값을 조회하는 함수
-  const { form, auth, authError } = useSelector(({ auth }) => ({
+  const { form, auth, authError, user } = useSelector(({ auth, user }) => ({
     form: auth.signUp,
     auth: auth.auth,
     authError: auth.authError,
+    user: user.user,
   }));
 
   const onChange = (e) => {
@@ -49,8 +51,16 @@ const SignUpForm = () => {
     if (auth) {
       console.log('signupSuccess');
       console.log(auth);
+      dispatch(check());
     }
-  }, [auth, authError]);
+  }, [auth, authError, dispatch]);
+
+  useEffect(() => {
+    if (user) {
+      console.log(' check API 성공 ');
+      console.log(user);
+    }
+  }, [user]);
 
   return (
     <SignUp type="signUp" form={form} onChange={onChange} onSubmit={onSubmit} />
