@@ -3,8 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeField, initializeForm, signUp } from '../../modules/auth';
 import SignUp from '../../components/SignUp/SignUp';
 import { check } from '../../modules/user';
+import { withRouter } from 'react-router-dom';
 
-const SignUpForm = () => {
+const SignUpForm = ({ history }) => {
   const dispatch = useDispatch();
   //useSelector: 리덕스의 상태값을 조회하는 함수
   const { form, auth, authError, user } = useSelector(({ auth, user }) => ({
@@ -57,14 +58,14 @@ const SignUpForm = () => {
 
   useEffect(() => {
     if (user) {
-      console.log(' check API 성공 ');
       console.log(user);
+      history.push('/');
     }
-  }, [user]);
+  }, [history, user]);
 
   return (
     <SignUp type="signUp" form={form} onChange={onChange} onSubmit={onSubmit} />
   );
 };
 
-export default SignUpForm;
+export default withRouter(SignUpForm);
