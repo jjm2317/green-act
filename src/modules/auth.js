@@ -1,5 +1,5 @@
 import { createAction, handleActions } from 'redux-actions';
-import { takeLatest } from 'redux-saga/effects';
+import { takeLatest } from '../../node_modules/redux-saga/effects';
 import createRequestSaga, {
   createRequestActionTypes,
 } from '../lib/createRequestSaga';
@@ -84,6 +84,12 @@ const auth = handleActions(
     }),
 
     [SIGNUP_SUCCESS]: (state, { payload: auth }) => ({
+      ...state,
+      authError: null,
+      auth,
+    }),
+
+    [SIGNUP_FAILURE]: (state, { payload: error }) => ({
       ...state,
       authError: null,
       auth,
