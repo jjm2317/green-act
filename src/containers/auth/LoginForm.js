@@ -2,12 +2,18 @@ import React, { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeField, initializeForm } from '../../modules/auth';
 import Login from '../../components/Login/Login';
+import { withRouter } from 'react-router-dom';
+import { check } from '../../modules/user';
+
 //로그인관련 데이터를 props로서 데이터 처리능력이 없는 Login component로 전달
 const LoginForm = ({ history }) => {
   console.log('loginform start');
   const dispatch = useDispatch();
-  const { form } = useSelector(({ auth }) => ({
+  const { form, auth, authError, user } = useSelector(({ auth, user }) => ({
     form: auth.login,
+    auth: auth.auth,
+    authError: auth.authError,
+    user: user.user,
   }));
 
   const onChange = (e) => {
