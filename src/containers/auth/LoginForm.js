@@ -32,14 +32,6 @@ const LoginForm = ({ history }) => {
     e.preventDefault();
     const { username, password } = form;
     dispatch(login({ username, password }));
-    // const response = await fetch('http://3.34.157.240:4000/login', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(form),
-    // });
-    // const { username, password } = await response.json();
-
-    // history.push('/');
   };
 
   useEffect(() => {
