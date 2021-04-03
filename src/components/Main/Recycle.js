@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Recycle = () => {
     return (
-        <section className="recycle">
+        <section className="recycle" id="recycle">
             <div className="left-section">
                 <h2 className="recycle-title">분리수거</h2>
                 <div className="arrow-buttons">
