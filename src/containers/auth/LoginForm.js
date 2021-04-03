@@ -11,6 +11,7 @@ const LoginForm = ({ history }) => {
   const dispatch = useDispatch();
   const { form, auth, authError, user } = useSelector(({ auth, user }) => ({
     form: auth.login,
+    auth: auth.auth,
     authError: auth.authError,
     user: user.user,
   }));
