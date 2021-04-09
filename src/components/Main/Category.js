@@ -13,7 +13,7 @@ const Category = () => {
           to="recycle"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-170}
           duration={500}
         >
         <li className="category-item">

@@ -11,7 +11,7 @@ const Search = () => {
         <img src="/images/mainVisual.png" />
       </div>
       <form className="search-form">
-        <input className="" type="search" />
+        <input className="" type="search" placeholder="원하는 품목의 분리수거 방법을 검색해보세요"/>
         <div className="link-box link-box--green">
           <a>검색</a>
         </div>
