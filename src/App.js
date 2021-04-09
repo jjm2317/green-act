@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LoginForm from './containers/auth/LoginForm';
 import RecyclePage from './components/Recycle/RecyclePage';
 import GeneralWaste from './components/Recycle/GeneralWaste';
+import BoardMain from './components/Board/BoardMain';
 
 console.log(Header);
 const App = () => {
@@ -22,7 +23,7 @@ const App = () => {
         <Switch>
           <Route path="/Login" component={LoginForm} />
           <Route path="/SignUp" component={SignUp} />
-          <Route path="/board" component={Bestboard} />
+          <Route path="/board" component={BoardMain} />
           <Route path="/Recycle/Plastic" component={PlasticWaste} />
           <Route path="/recycle" component={RecyclePage}/>
         </Switch>

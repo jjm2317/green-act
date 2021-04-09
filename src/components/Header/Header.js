@@ -17,7 +17,7 @@ const Header = () => {
             <Link to="/recycle/GeneralWaste">분리수거</Link>
           </li>
           <li className="menu__item">
-            <a href="#">게시판</a>
+            <Link to="/board">게시판</Link>
           </li>
           <li className="menu__item">
             <a href="#">뉴스</a>
