@@ -1,71 +1,60 @@
 import React from 'react';
 import './SignUp.scss';
 
-const SignUp = ({ type, form, onChange, onSubmit }) => {
-  console.log(form);
+const SignUp = () => {
   return (
     <section className="signup">
       <h2 className="signup-heading">회원가입</h2>
-      <form action="#" className="signup-form" onSubmit={onSubmit}>
+      <form action="#" class="signup-form" method="POST">
         <fieldset>
           <legend>회원가입 폼</legend>
           <div className="user-nickname">
-            <label htmlFor="user-nickname">닉네임</label>
+            <label for="user-nickname">닉네임</label>
             <input
               type="text"
-              name="nickname"
+              name="user-nickname"
               id="user-nickname"
               placeholder="OOOOO"
-              onChange={onChange}
-              value={form.nickname}
               required
             />
           </div>
           <div className="user-email">
-            <label htmlFor="user-email">이메일</label>
+            <label for="user-email">이메일</label>
             <input
               type="email"
-              name="username"
+              name="user-email"
               id="user-email"
               placeholder="OOOOO@mail.com"
-              onChange={onChange}
-              value={form.username}
               required
             />
           </div>
           <div className="user-password">
-            <label htmlFor="user-password">비밀번호</label>
+            <label for="user-password">비밀번호</label>
             <input
               type="password"
-              name="password"
+              name="user-password"
               id="user-password"
               placeholder="********"
-              onChange={onChange}
-              value={form.password}
               required
             />
           </div>
           <div className="check-user-password">
-            <label htmlFor="check-user-password">비밀번호 확인</label>
+            <label for="check-user-password">비밀번호 확인</label>
             <input
               type="password"
-              name="passwordConfirm"
+              name="check-user-password"
               id="check-user-password"
               placeholder="********"
-              onChange={onChange}
-              value={form.passwordConfirm}
               required
             />
           </div>
           <div className="user-interests">
-            <label htmlFor="check-user-password">관심분야</label>
+            <label for="check-user-password">관심분야</label>
             <input
               type="radio"
-              name="interest"
+              name="check-user-password"
               id="check-user-password"
               placeholder="********"
-              onChange={onChange}
-              value={form.interests}
               required
             />
           </div>

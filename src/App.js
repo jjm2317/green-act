@@ -9,9 +9,9 @@ import Bestboard from './components/Main/Bestboard';
 import PlasticWaste from './components/Recycle/PlasticWaste';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LoginForm from './containers/auth/LoginForm';
-import SignUpForm from './containers/auth/SignUpForm';
 import RecyclePage from './components/Recycle/RecyclePage';
 import GeneralWaste from './components/Recycle/GeneralWaste';
+import BoardMain from './components/Board/BoardMain';
 
 console.log(Header);
 const App = () => {
@@ -22,10 +22,10 @@ const App = () => {
         <Route exact path="/" component={Main} />
         <Switch>
           <Route path="/Login" component={LoginForm} />
-          <Route path="/SignUp" component={SignUpForm} />
-          <Route path="/board" component={Bestboard} />
+          <Route path="/SignUp" component={SignUp} />
+          <Route path="/board" component={BoardMain} />
           <Route path="/Recycle/Plastic" component={PlasticWaste} />
-          <Route path="/recycle" component={RecyclePage} />
+          <Route path="/recycle" component={RecyclePage}/>
         </Switch>
         <Footer />
       </Container>

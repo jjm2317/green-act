@@ -40,7 +40,7 @@ export default function News() {
   };
 
   return (
-    <div className="news">
+    <div className="news" id="news">
       {/* <ul className="container">{newsArrayData}</ul> */}
       <Slider {...settings}>
         <div>{newsArrayData[7]}</div>
