@@ -17,6 +17,11 @@
 
   .signup-form {
     fieldset {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-around;
+      height: 400px;
+      // align-items: center;
       border: none;
     }
     .user-nickname {
@@ -107,8 +112,6 @@
       align-items: center;
       font-size: 1.5em;
       font-weight: 800;
-      margin-top: 1vh;
-      margin-bottom: 4vh;
       label {
         margin-left: 1.5vw;
         white-space: nowrap;
@@ -146,8 +149,6 @@
       align-items: center;
       font-size: 1.5em;
       font-weight: 800;
-      margin-top: 1vh;
-      margin-bottom: 4vh;
       label {
         margin-left: 1.5vw;
         white-space: nowrap;
