@@ -11,7 +11,20 @@ const BoardMain = () => {
         </form>
       </section>
       <section className="bottom">
+        <section className="left">
+          <div className="popularBoard">
+
+          </div>
+          <div className="recentBoard">
+
+          </div>
+
+        </section>
+        <section className="right">
+
+        </section>
       </section>
+
     </div>
   );
 };

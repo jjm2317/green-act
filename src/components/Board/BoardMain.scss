@@ -2,7 +2,7 @@
   max-width: 1000px;
   min-width: 600px;
   width: 100%;
-  height: 140rem;
+  height: 80rem;
   display: flex;
   flex-direction: column;
   background-color: #DEDD87;
@@ -53,10 +53,33 @@
   }
   .bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: 80%;
     margin-top: 3rem;
     background-color: bisque;
+
+    .left{
+      width: 50%;
+      height: 100%;
+      background-color: gold;
+
+      .popularBoard{
+        height: 30rem;
+        background-color: #71bd37;
+      }
+      .recentBoard{
+        height: 30rem;
+        background-color: pink;
+      }
+
+    }
+    .right{
+      width: 50%;
+      height: 100%;
+      background-color: aqua;
+
+    }
+
   }
 }
