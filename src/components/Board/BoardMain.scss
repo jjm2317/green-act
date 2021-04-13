@@ -17,18 +17,22 @@
 
     .board_form{
       display: flex;
-      width: 34rem;
+      width: 45rem;
       height: 4rem;
       border-radius: 2rem;
       border: none;
 
       .searchbar{
-        width: 40rem;
+        width: 45rem;
         display: flex;
         border-radius: 2rem;
         border: none;
         background-color: #eeeeee;
         padding-left: 4rem;
+        font-size: 1.3rem;
+        &::placeholder{
+          color: black;
+        }
 
         background-image: url("../../images/MagnifyingGlass.png");
         background-repeat: no-repeat;
@@ -45,7 +49,7 @@
         color: white;
         justify-content: center;
         align-items: center;
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: bold;
         margin-left: -3rem;
       }
@@ -60,24 +64,217 @@
     background-color: bisque;
 
     .left{
-      width: 50%;
+      width: 60%;
       height: 100%;
       background-color: gold;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
 
       .popularBoard{
-        height: 30rem;
-        background-color: #71bd37;
+        display: flex;
+        width: 50rem;
+        height: 20rem;
+        background-color: white;
+        border-radius: 2rem;
+        border: 1px solid #71bd37;
+        margin-bottom: 5rem;
+        .headline{
+          display: flex;
+          width: 100%;
+          height: 5.5rem;
+          align-items: center;
+          border-bottom: 3px solid #71bd37;
+
+          background-image: url("../../images/more_button.png");
+          background-repeat: no-repeat;
+          background-position: 46rem 2.5rem;
+          background-size: 1rem;
+          .title{
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 80%;
+            margin-left: 2rem;
+            margin-top: 1.2rem;
+          }
+          .more{
+            width: 20%;
+            border: 0;
+            outline: 0;
+            background-color: transparent;
+            margin-right: 1.5rem;
+            margin-top: 1.2rem;
+            font-size: 1.1rem;
+            text-decoration: underline;
+          }
+        }
       }
       .recentBoard{
-        height: 30rem;
-        background-color: pink;
+        display: flex;
+        width: 50rem;
+        height: 20rem;
+        background-color: white;
+        border-radius: 2rem;
+        border: 1px solid #71bd37;
+        .headline{
+          display: flex;
+          width: 100%;
+          height: 5.5rem;
+          align-items: center;
+          border-bottom: 3px solid #71bd37;
+
+          background-image: url("../../images/more_button.png");
+          background-repeat: no-repeat;
+          background-position: 46rem 2.5rem;
+          background-size: 1rem;
+          .title{
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 80%;
+            margin-left: 2rem;
+            margin-top: 1.2rem;
+          }
+          .more{
+            width: 20%;
+            border: 0;
+            outline: 0;
+            background-color: transparent;
+            margin-right: 1.5rem;
+            margin-top: 1.2rem;
+            font-size: 1.1rem;
+            text-decoration: underline;
+          }
+        }
+
       }
 
     }
     .right{
-      width: 50%;
+      width: 40%;
       height: 100%;
       background-color: aqua;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .mypage-box{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        height: 20rem;
+        border-radius: 2rem;
+        background-color: white;
+        border: 1px solid black;
+        margin-bottom: 5rem;
+        .myarticle{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.4rem;
+          font-weight: bold;
+          width: 100%;
+          height: 33.3%;
+          .myarticle_image{
+            width: 4.5rem;
+            height: 4.5rem;
+            background-image: url("../../images/myarticle.png");
+            background-size: 4.5rem 4.5rem;
+            background-repeat: no-repeat;
+            margin-right: 3rem;
+          }
+          .article_number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            width: 4.5rem;
+            height: 4.5rem;
+            background-image: url("../../images/circlenumber.png");
+            background-repeat: no-repeat;
+            background-size: 2rem 2.5rem;
+            background-position: 1.3rem 1rem;
+            margin-left: 3rem;
+          }
+          //&::before{
+          //  content: "";
+          //  width: 5rem;
+          //  height: 5rem;
+          //  background-image: url("../../images/myarticle.png");
+          //  background-size: 5rem 5rem;
+          //  background-repeat: no-repeat;
+          //  margin-left: -1rem;
+          //}
+        }
+        .myscrap{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.4rem;
+          font-weight: bold;
+          width: 100%;
+          height: 33.3%;
+          .myscrap_image{
+            width: 4.5rem;
+            height: 4.5rem;
+            background-image: url("../../images/myscrap.png");
+            background-size: 4.5rem 4.5rem;
+            background-repeat: no-repeat;
+            margin-right: 4.3rem;
+          }
+          .scrap_number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            width: 4.5rem;
+            height: 4.5rem;
+            background-image: url("../../images/circlenumber.png");
+            background-repeat: no-repeat;
+            background-size: 2rem 2.5rem;
+            background-position: 1.2rem 1rem;
+            margin-left: 4.3rem;
+          }
+        }
+        .mycomment{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.4rem;
+          font-weight: bold;
+          width: 100%;
+          height: 33.3%;
+          .mycomment_image{
+            width: 4.5rem;
+            height: 4.5rem;
+            background-image: url("../../images/mycomment.png");
+            background-size: 4.5rem 4.5rem;
+            background-repeat: no-repeat;
+            margin-right: 3rem;
+          }
+          .comment_number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            width: 4.5rem;
+            height: 4.5rem;
+            background-image: url("../../images/circlenumber.png");
+            background-repeat: no-repeat;
+            background-size: 2rem 2.5rem;
+            background-position: 1.3rem 1rem;
+            margin-left: 3rem;
+          }
+        }
+    }
+      .category-box{
+        display: flex;
+        width: 30rem;
+        height: 20rem;
+        border-radius: 2rem;
+        background-color: white;
+        border: 1px solid black;
+
+    }
 
     }
 
