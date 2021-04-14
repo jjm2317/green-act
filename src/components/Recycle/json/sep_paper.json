@@ -1,0 +1,10 @@
+[
+    {"id":"1","Class":"골판지류","Characteristics":"","Contents":"택배 박스","Note":"테이프, 송장 스티커를 모두 제거한 후 배출"},
+    {"id":"2","Class":"책지류","Characteristics":"","Contents":"신문지","Note":"물기에 젖지 않게 묶거나 박스에 넣어 배출"},
+    {"id":"3","Class":"책지류","Characteristics":"","Contents":"노트","Note":"스프링노트의 경우 스프링을 떼고 배출"},
+    {"id":"4","Class":"종이류","Characteristics":"","Contents":"전단지","Note":""},
+    {"id":"5","Class":"종이류","Characteristics":"","Contents":"종이 쇼핑백","Note":""},
+    {"id":"6","Class":"책지류","Characteristics":"","Contents":"달력","Note":"스프링 제거 후 배출"},
+    {"id":"7","Class":"일회용품","Characteristics":"","Contents":"종이팩","Note":"내용물을 비운 뒤 일반종이류와 혼합되지 않게 구분하여 배출,\r\n가급적이면 물로 헹구기"},
+    {"id":"8","Class":"일회용품","Characteristics":"","Contents":"종이컵","Note":"내용물을 비운 뒤 일반종이류와 혼합되지 않게 구분하여 배출,\r\n가급적이면 물로 헹구기"}
+]

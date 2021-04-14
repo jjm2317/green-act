@@ -12,6 +12,9 @@ import LoginForm from './containers/auth/LoginForm';
 import SignUpForm from './containers/auth/SignUpForm';
 import RecyclePage from './components/Recycle/RecyclePage';
 import GeneralWaste from './components/Recycle/GeneralWaste';
+import GlassTrash from './components/Recycle/GlassTrash';
+import FoodWaste from './components/Recycle/FoodWaste';
+
 
 console.log(Header);
 const App = () => {
