@@ -1,5 +1,5 @@
 import React from 'react';
-import './FoodWaste.scss';
+import './Waste.scss';
 import gen_food from "./json/gen_food.json";
 import sep_food from "./json/sep_food.json";
 
@@ -54,7 +54,7 @@ export default function FoodWaste() {
 
 
   return (  
-    <section className="FoodWaste">
+    <section className="Waste">
       <section className="top">
         <div className="title">
           <div className="title-text">음식물쓰레기</div>
@@ -80,7 +80,7 @@ export default function FoodWaste() {
             </b>
             </div>
           </div>
-          <div className="item-long arrow-six">
+          <div className="item-long arrow-eight">
             <div className="title">과일류 - 음식물쓰레기</div>
             <div className="content">{fruitData}</div>
           </div>
@@ -91,7 +91,7 @@ export default function FoodWaste() {
             <div className="title">채소류 - 분리수거</div>
             <div className="content"><b>{sep_vege[0].CONTENTS}</b></div>
           </div>
-          <div className="item-long arrow-six">
+          <div className="item-long arrow-eight">
             <div className="title">채소류 - 음식물쓰레기</div>
             <div className="content">{vegeData}</div>
           </div>
@@ -114,7 +114,7 @@ export default function FoodWaste() {
             <div className="title"></div>
             <div className="content"></div>
           </div>
-          <div className="item-long arrow-six">
+          <div className="item-long arrow-eight">
             <div className="title">어패류 - 음식물쓰레기</div>
             <div className="content">{fishData}</div>
           </div>
@@ -136,7 +136,7 @@ export default function FoodWaste() {
             <div className="title"></div>
             <div className="content"></div>
           </div>
-          <div className="item-long arrow-six">
+          <div className="item-long arrow-eight">
             <div className="title">티백,차 - 음식물쓰레기</div>
             <div className="content">{teaData}</div>
           </div>

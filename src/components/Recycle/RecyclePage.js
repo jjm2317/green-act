@@ -7,6 +7,9 @@ import FoodWaste from './FoodWaste';
 import PlasticBags from './PlasticBags';
 import PaperWaste from './PaperWaste';
 import StyrofoamTrash from './StyrofoamTrash';
+import PlasticWaste from './PlasticWaste';
+import GlassTrash from './GlassTrash';
+import CannedGarbage from './CannedGarbage';
 import GeneralWasteImage from "../../images/recycleMenu_generalWaste.png"
 import GlassTrashImage from "../../images/recycleMenu_Bottle.png"
 import CannedGarbageImage from "../../images/recycleMenu_Can.png"
@@ -78,6 +81,9 @@ const RecyclePage = () => {
           <Route path="/recycle/PaperWaste" component={PaperWaste} />
           <Route path="/recycle/StyrofoamTrash" component={StyrofoamTrash} />
           <Route path="/recycle/PlasticBags" component={PlasticBags} />
+          <Route path="/recycle/PlasticWaste" component={PlasticWaste} />
+          <Route path="/recycle/GlassTrash" component={GlassTrash} />
+          <Route path="/recycle/CannedGarbage" component={CannedGarbage} />
       </div>
 
     </section>

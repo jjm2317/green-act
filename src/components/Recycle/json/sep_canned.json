@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "CLASS": "알루미늄캔",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "음료수캔, 맥주캔",
+        "NOTE": "내용물을 비우고 물로 헹궈서 배출, 라벨과 스티커 등을 떼서 배출, 부피 줄여서 버리기"
+    },
+    {
+        "id": "2",
+        "CLASS": "통조림",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "참치캔, 스팸",
+        "NOTE": ""
+    },
+    {
+        "id": "3",
+        "CLASS": "통조림",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "생선통조림, 황도통조림, 옥수수통조림",
+        "NOTE": ""
+    },
+    {
+        "id": "4",
+        "CLASS": "부탄가스",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "",
+        "NOTE": "내부 가스 등 내용물을 완전히 비우고 배출"
+    },
+    {
+        "id": "5",
+        "CLASS": "가스 용기",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "스프레이, 락카, 무스, 살충제",
+        "NOTE": "내부 가스 등 내용물을 완전히 비우고 배출"
+    },
+    {
+        "id": "6",
+        "CLASS": "고철",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "알루미늄, 스텐, 공구류, 철사, 못, 전선",
+        "NOTE": "투명 비닐봉투에 넣어 배출"
+    }
+]

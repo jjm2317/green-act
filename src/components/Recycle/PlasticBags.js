@@ -1,5 +1,5 @@
 import React from 'react';
-import './PlasticBags.scss';
+import './Waste.scss';
 import sep_plasticbags from "./json/sep_plasticbag";
 import gen_plasticbags from "./json/gen_plasticbag";
 
@@ -15,7 +15,7 @@ export default function PlasticBags() {
 
 
   return (
-    <section className="PlasticBags">
+    <section className="Waste">
       <section className="top">
         <div className="title">
           <div className="title-text">비닐</div>

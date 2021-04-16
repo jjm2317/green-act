@@ -1,10 +1,10 @@
 import React from 'react';
-import './PaperWaste.scss';
+import './Waste.scss';
 import sep_paper from "./json/sep_paper";
 import gen_paper from "./json/gen_paper";
 
 //for, map반복문으로 바꿔서 작성
-export default function PaperWaste() {
+export default function Waste() {
   const sep_golpan = sep_paper.filter(function(data){return data.Class=="골판지류"});
   const sep_book = sep_paper.filter(function(data){return data.Class=="책지류"});
   const sep_pap = sep_paper.filter(function(data){return data.Class=="종이류"});
@@ -36,7 +36,7 @@ export default function PaperWaste() {
   });
 
   return (
-    <section className="GeneralWaste">
+    <section className="Waste">
       <section className="top">
         <div className="title">
           <div className="title-text">종이류</div>
@@ -59,7 +59,7 @@ export default function PaperWaste() {
               Tip! {sep_golpan[0].Note}
             </div>
           </div>
-          <div className="item-long arrow-six">
+          <div className="item-long arrow-eight">
           <div className="title">코팅 종이 - 분리수거 불가</div>
             <div className="content">
                 {gen_coat[0].Note}{coatData}</div>
@@ -78,7 +78,7 @@ export default function PaperWaste() {
                 </div>
             </div>
           </div>
-          <div className="item-long arrow-six">
+          <div className="item-long arrow-eight">
           <div className="title">오염 종이 - 분리수거 불가</div>
             <div className="content">{gen_oyum[0].Note}{oyumData}</div>
           </div>
@@ -90,19 +90,19 @@ export default function PaperWaste() {
           <div className="title">{sep_pap[0].Class} - 분리수거</div>
             <div className="content">{sep_pap[0].Contents}{sep_pap[1].Contents}</div>
           </div>
-          <div className="item-long arrow-six">
+          <div className="item-long arrow-eight">
           <div className="title">감열지 - 분리수거 불가</div>
             <div className="content">{gen_gam[0].Note}{gamData}</div>
           </div>
         </div>
         {/* 네 번째 줄 */}
         <div className="Line">
-          <div className="item-short arrow-seven">
+          <div className="item-short arrow-one">
           <div className="title">{sep_onetime[0].Class} - 분리수거</div>
             <div className="content">{sep_onetime[0].Contents},{sep_onetime[1].Contents}
             <br/> Tip! {sep_onetime[0].Note}</div>
           </div>
-          <div className="item-long arrow-four">
+          <div className="item-long arrow-three">
           <div className="title">재활용 불가능 종이류 - 분리수거 불가</div>
             <div className="content">{impossData}</div>
           </div>
