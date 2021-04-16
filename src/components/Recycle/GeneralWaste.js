@@ -1,5 +1,5 @@
 import React from 'react';
-import './GeneralWaste.scss';
+import './Waste.scss';
 import general from "./json/general";
 
 //for, map반복문으로 바꿔서 작성
@@ -27,7 +27,7 @@ export default function GeneralWaste() {
   // });
 
   return (
-    <section className="GeneralWaste">
+    <section className="Waste">
       <section className="top">
         <div className="title">
           <div className="title-text">일반쓰레기</div>
@@ -72,7 +72,7 @@ export default function GeneralWaste() {
           <div className="title">{id5[0].CLASS}</div>
             <div className="content">{id5[0].CONTENTS}</div>
           </div>
-          <div className="item-long arrow-six">
+          <div className="item-long arrow-eight">
           <div className="title">{id6[0].CLASS}</div>
             <div className="content">{id6[0].CONTENTS}</div>
           </div>
