@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/SignUp" component={SignUp} />
           <Route path="/board" component={BoardMain} />
           <Route path="/Recycle/Plastic" component={PlasticWaste} />
-          <Route path="/recycle" component={RecyclePage}/>
+          <Route path="/recycle" component={RecyclePage} />
         </Switch>
         <Footer />
       </Container>

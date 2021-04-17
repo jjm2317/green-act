@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "CLASS": "내연재, 공작용 우드락 재질",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "건축용 재질",
+        "NOTE": ""
+    },
+    {
+        "id": "2",
+        "CLASS": "원료가 OTHER로 분류된 플라스틱",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "즉석밥 용기, ",
+        "NOTE": ""
+    },
+    {
+        "id": "3",
+        "CLASS": "플라스틱 아닌 장난감",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "나무 장난감, 분해되지 않는 장난감, 대형 완구류",
+        "NOTE": "유아용 자동차,미끄럼틀 등 대형완구류는 대형 폐기물로 신고배출"
+    },
+    {
+        "id": "4",
+        "CLASS": "재활용 불가 플라스틱",
+        "CHARACTERISTICS": "",
+        "CONTENTS": "빨대, 볼펜, 칫솔, 소형플라스틱, 혼합 플라스틱",
+        "NOTE": "부피가 작거나 다른 재질이 혼합된 플라스틱은 재활용 불가능"
+    }
+]
