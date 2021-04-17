@@ -12,6 +12,8 @@ import LoginForm from './containers/auth/LoginForm';
 import RecyclePage from './components/Recycle/RecyclePage';
 import GeneralWaste from './components/Recycle/GeneralWaste';
 import BoardMain from './components/Board/BoardMain';
+import GlassTrash from './components/Recycle/GlassTrash';
+import FoodWaste from './components/Recycle/FoodWaste';
 
 console.log(Header);
 const App = () => {
