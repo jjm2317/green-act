@@ -1,0 +1,6 @@
+[
+    {"id":"1","Class":"비닐로 코팅된 종이","Characteristics":"단면이 비닐로 코팅된 종이","Contents":"","Note":"종이류에 배출"},
+    {"id":"2","Class":"오염된 비닐","Characteristics":"","Contents":"음식물이 묻은 비닐","Note":"일반쓰레기에 배출"},
+    {"id":"3","Class":"비닐과 다른 재질이 합쳐진 경우","Characteristics":"","Contents":"아이스팩","Note":"겉(비닐)과 안(합성수지물질)의 재질이 달라 제품을 분리해서 겉 비닐을 깨끗하게 배출하면 재활용 가능"},
+    {"id":"4","Class":"PVC 소재","Characteristics":"","Contents":"랩","Note":""}
+    ]

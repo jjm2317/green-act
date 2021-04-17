@@ -3,6 +3,13 @@ import './RecyclePage.scss';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import LoginForm from '../../containers/auth/LoginForm';
 import GeneralWaste from './GeneralWaste';
+import FoodWaste from './FoodWaste';
+import PlasticBags from './PlasticBags';
+import PaperWaste from './PaperWaste';
+import StyrofoamTrash from './StyrofoamTrash';
+import PlasticWaste from './PlasticWaste';
+import GlassTrash from './GlassTrash';
+import CannedGarbage from './CannedGarbage';
 import GeneralWasteImage from "../../images/recycleMenu_generalWaste.png"
 import GlassTrashImage from "../../images/recycleMenu_Bottle.png"
 import CannedGarbageImage from "../../images/recycleMenu_Can.png"
@@ -13,7 +20,6 @@ import PaperWasteImage from "../../images/recycleMenu_Paper.png"
 import FoodWasteImage from "../../images/recycleMenu_Food.png"
 import SignUp from '../SignUp/SignUp';
 import Bestboard from '../Main/Bestboard';
-import PlasticWaste from './PlasticWaste';
 
 const RecyclePage = () => {
   return(
@@ -71,6 +77,13 @@ const RecyclePage = () => {
 
       <div className= "description">
           <Route exact path="/recycle/GeneralWaste" component={GeneralWaste} />
+          <Route path="/recycle/FoodWaste" component={FoodWaste} />
+          <Route path="/recycle/PaperWaste" component={PaperWaste} />
+          <Route path="/recycle/StyrofoamTrash" component={StyrofoamTrash} />
+          <Route path="/recycle/PlasticBags" component={PlasticBags} />
+          <Route path="/recycle/PlasticWaste" component={PlasticWaste} />
+          <Route path="/recycle/GlassTrash" component={GlassTrash} />
+          <Route path="/recycle/CannedGarbage" component={CannedGarbage} />
       </div>
 
     </section>

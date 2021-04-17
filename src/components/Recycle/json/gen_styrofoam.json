@@ -1,0 +1,9 @@
+[
+    {"id":"4","Class":"스펀지 형태","Characteristics":"과일 포장재","Contents":"","Note":"스티로폼 용기를 쪼개어 종량제 봉투에 담아 배출"},
+    {"id":"5","Class":"오염된 스티로폼","Characteristics":"이물질 오염","Contents":"","Note":""},
+    {"id":"6","Class":"오염된 스티로폼","Characteristics":"물에 젖은 스티로폼","Contents":"","Note":""},
+    {"id":"7","Class":"오염된 스티로폼","Characteristics":"음식물이 묻은 스티로폼","Contents":"","Note":""},
+    {"id":"8","Class":"다른 물질과 결합된 스티로폼","Characteristics":"겉포장 부착된 스티로폼","Contents":"겉포장 부착된 스티로폼","Note":""},
+    {"id":"9","Class":"다른 물질과 결합된 스티로폼","Characteristics":"","Contents":"제품의 완충제","Note":"색이 들어간 스티로폼은 쪼개어 일반 쓰레기로 배출"},
+    {"id":"10","Class":"건축 자재용 스티로폼","Characteristics":"","Contents":"","Note":"산업폐기물"}
+    ]
