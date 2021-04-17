@@ -19,12 +19,6 @@ const Header = () => {
           <li className="menu__item">
             <Link to="/board">게시판</Link>
           </li>
-          <li className="menu__item">
-            <a href="#">뉴스</a>
-          </li>
-          <li className="menu__item">
-            <a href="#">캠페인</a>
-          </li>
         </ul>
       </nav>
       <ul className="member">
