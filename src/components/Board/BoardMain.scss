@@ -5,13 +5,11 @@
   height: 80rem;
   display: flex;
   flex-direction: column;
-  background-color: #DEDD87;
   .top {
     width: 100%;
     height: 7%;
     display: flex;
     flex-direction: row;
-    background-color: pink;
     align-items: center;
     justify-content: center;
 
@@ -21,6 +19,7 @@
       height: 4rem;
       border-radius: 2rem;
       border: none;
+      box-shadow: 3px 3px 3px #999999;
 
       .searchbar{
         width: 45rem;
@@ -60,25 +59,26 @@
     flex-direction: row;
     width: 100%;
     height: 80%;
-    margin-top: 3rem;
-    background-color: bisque;
+    margin-top: 4rem;
 
     .left{
       width: 60%;
       height: 100%;
-      background-color: gold;
       display: flex;
       align-items: center;
       flex-direction: column;
 
       .popularBoard{
         display: flex;
+        flex-direction: column;
         width: 50rem;
         height: 20rem;
         background-color: white;
         border-radius: 2rem;
         border: 1px solid #71bd37;
         margin-bottom: 5rem;
+        box-shadow: 3px 3px 3px #999999;
+
         .headline{
           display: flex;
           width: 100%;
@@ -108,14 +108,76 @@
             text-decoration: underline;
           }
         }
+        .popular-itemList{
+          width: 100%;
+          height: 14.5rem;
+          .popular-item{
+            display: flex;
+            flex-direction: row;
+            height:7.25rem;
+            border-bottom: 1px #b4df93 solid;
+
+            .popular-left{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 70%;
+              .pItem-title{
+                font-size: 1.4rem;
+                font-weight: bold;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+                margin-left: 2.3rem;
+              }
+              .pItem-content{
+                height: 50%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                margin-left: 2.3rem;
+              }
+            }
+            .popular-right{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 30%;
+              .pItem-comment{
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-top: 1.2rem;
+                margin-right: 2.8rem;
+              }
+              .pItem-scrap{
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-bottom: 1.2rem;
+                margin-right: 2.8rem;
+              }
+            }
+          }
+          .item-last{
+            border-bottom: none;
+          }
+        }
+
       }
       .recentBoard{
         display: flex;
+        flex-direction: column;
         width: 50rem;
         height: 20rem;
         background-color: white;
         border-radius: 2rem;
         border: 1px solid #71bd37;
+        box-shadow: 3px 3px 3px #999999;
+
         .headline{
           display: flex;
           width: 100%;
@@ -145,6 +207,65 @@
             text-decoration: underline;
           }
         }
+        .recent-itemList{
+          width: 100%;
+          height: 14.5rem;
+          .recent-item{
+            display: flex;
+            flex-direction: row;
+            height:7.25rem;
+            border-bottom: 1px #b4df93 solid;
+
+            .recent-left{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 70%;
+              .rItem-title{
+                font-size: 1.4rem;
+                font-weight: bold;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+                margin-left: 2.3rem;
+              }
+              .rItem-content{
+                height: 50%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                margin-left: 2.3rem;
+              }
+            }
+            .recent-right{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 30%;
+              .rItem-comment{
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-top: 1.2rem;
+                margin-right: 2.8rem;
+              }
+              .rItem-scrap{
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-bottom: 1.2rem;
+                margin-right: 2.8rem;
+              }
+            }
+          }
+          .item-last{
+            border-bottom: none;
+          }
+        }
+
 
       }
 
@@ -152,7 +273,6 @@
     .right{
       width: 40%;
       height: 100%;
-      background-color: aqua;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -166,6 +286,8 @@
         background-color: white;
         border: 1px solid black;
         margin-bottom: 5rem;
+        box-shadow: 3px 3px 3px #999999;
+
         .myarticle{
           display: flex;
           align-items: center;
@@ -268,11 +390,51 @@
     }
       .category-box{
         display: flex;
+        flex-direction: column;
         width: 30rem;
-        height: 20rem;
+        height: 35rem;
         border-radius: 2rem;
         background-color: white;
         border: 1px solid black;
+        box-shadow: 3px 3px 3px #999999;
+
+        .headline{
+          display: flex;
+          width: 100%;
+          height: 15%;
+          align-items: center;
+          border-bottom: 3px solid #000000;
+          .title{
+            display: flex;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 1.2rem;
+          }
+        }
+        .item-list{
+          width:100%;
+          height:85%;
+          display: flex;
+          flex-direction: column;
+          .item{
+            width: 100%;
+            height: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("../../images/yellow-box.png");
+            background-repeat: no-repeat;
+            background-position: 3rem 1rem;
+            border-bottom: 1px solid #000000;
+            font-size: 1.3rem;
+            font-weight: bold;
+          }
+          .item-wasteSorting{
+            border-bottom: none;
+          }
+        }
 
     }
 
