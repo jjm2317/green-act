@@ -26,6 +26,7 @@
   //  margin-left: 30rem;
   //}
 
+
   .left-section {
     width: 22%;
 
@@ -39,23 +40,31 @@
       height: 3rem;
       font-size: 2.5rem;
       color: #1D4C23;
+      margin-right: 4rem;
     }
 
     .arrow-buttons {
       width: 5rem;
       height: 3rem;
       display: inline-block;
-      margin-right: 5rem;
+      margin-right: 9.5rem;
 
       .left-button {
+        background-color: transparent;
+        border: none;
         font-size: 2rem;
+        font-weight: bold;
         display: inline;
-        margin-right: 1rem;
+        width:50%;
       }
 
       .right-button {
+        background-color: transparent;
+        border: none;
         font-size: 2rem;
+        font-weight: bold;
         display: inline;
+        width:50%;
       }
     }
   }
@@ -65,20 +74,35 @@
   display: flex;
   align-items: center;
 
-  .recycle-list {
-
-    display: flex;
-    flex-flow: row nowrap;
-
-    list-style: none;
-
-    img {
-      display: block;
-      width: 170px;
-      height: 170px;
-      margin-right: 1.2rem;
+  .slick-slider {
+    width: 750px;
+    .slick-arrow{
+      width: 10px;
+      height: 10px;
     }
   }
+
+  img {
+    display: block;
+    width: 170px;
+    height: 170px;
+    margin-right: 1.2rem;
+  }
+
+  //.recycle-list {
+  //
+  //  display: flex;
+  //  flex-flow: row nowrap;
+  //
+  //  list-style: none;
+  //
+  //  img {
+  //    display: block;
+  //    width: 170px;
+  //    height: 170px;
+  //    margin-right: 1.2rem;
+  //  }
+  //}
 }
 
   }
