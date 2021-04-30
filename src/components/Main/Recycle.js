@@ -15,7 +15,7 @@ import Slider from "react-slick";
 
 const Recycle = () => {
 
-    const customSlider = React.createRef();
+    const customSlider = useRef();
 
     const a_previous = () => {
         customSlider.current.slickPrev()
