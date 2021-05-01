@@ -49,15 +49,17 @@ const SignUp = () => {
             />
           </div>
           <fieldset className="user-interests">
-            <legend>관심있는 분야</legend>
-            <label for="check-user-password">관심분야</label>
-            <input
-              type="radio"
-              name="check-user-password"
-              id="check-user-password"
-              placeholder="********"
-              required
-            />
+            {/* <legend>관심있는 분야</legend> */}
+            <input type="checkbox" id="separate" name="separate" />
+            <label for="separate">분리수거</label>
+            <input type="checkbox" id="campaign" name="campaign" />
+            <label for="campaign">캠페인</label>
+            <input type="checkbox" id="news" name="news" />
+            <label for="news">뉴스</label>
+            <input type="checkbox" id="recycle" name="recycle" />
+            <label for="recycle">재활용</label>
+            <input type="checkbox" id="community" name="community" />
+            <label for="community">커뮤니티</label>
           </fieldset>
           <button className="link-box link-box--green" type="submit">
             완료
