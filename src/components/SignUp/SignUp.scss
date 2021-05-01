@@ -20,41 +20,28 @@
       display: flex;
       flex-flow: column wrap;
       justify-content: space-around;
-      height: 400px;
+      height: 360px;
       align-items: center;
       border: none;
     }
     .user-nickname {
       width: 20.469vw;
       min-width: 330px;
-      height: 60px;
+      height: 50px;
       border: 1px solid #71bd37;
       border-radius: 30px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 800;
 
       label {
-        margin-left: 1.5vw;
         white-space: nowrap;
-        width: 50px;
-      }
-      &::before {
-        content: '';
-
-        display: block;
-
-        order: 1;
-        margin: 0 2em;
-        width: 0px;
-        height: 0px;
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;
-        border-right: 14px solid none;
-        border-left: 14px solid #71bd37;
+        width: 80px;
+        text-align: right;
+        margin: 0 1em;
       }
       input {
         order: 2;
@@ -65,34 +52,21 @@
     .user-email {
       width: 20.469vw;
       min-width: 330px;
-      height: 60px;
+      height: 50px;
       border: 1px solid #71bd37;
       border-radius: 30px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 800;
 
       label {
-        margin-left: 1.5vw;
         white-space: nowrap;
-        width: 50px;
-      }
-      &::before {
-        content: '';
-
-        display: block;
-
-        order: 1;
-        margin: 0 2em;
-        width: 0px;
-        height: 0px;
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;
-        border-right: 14px solid none;
-        border-left: 14px solid #71bd37;
+        width: 80px;
+        text-align: right;
+        margin: 0 1em;
       }
       input {
         order: 2;
@@ -103,34 +77,22 @@
     .user-password {
       width: 20.469vw;
       min-width: 330px;
-      height: 60px;
+      height: 50px;
       border: 1px solid #71bd37;
       border-radius: 30px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 800;
       label {
-        margin-left: 1.5vw;
         white-space: nowrap;
-        width: 50px;
+        width: 80px;
+        text-align: right;
+        margin: 0 1em;
       }
-      &::before {
-        content: '';
 
-        display: block;
-
-        order: 1;
-        margin: 0 2em;
-        width: 0px;
-        height: 0px;
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;
-        border-right: 14px solid none;
-        border-left: 14px solid #71bd37;
-      }
       input {
         order: 2;
         border: none;
@@ -140,33 +102,20 @@
     .check-user-password {
       width: 20.469vw;
       min-width: 330px;
-      height: 60px;
+      height: 50px;
       border: 1px solid #71bd37;
       border-radius: 30px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 800;
       label {
-        margin-left: 1.5vw;
         white-space: nowrap;
-        width: 50px;
-      }
-      &::before {
-        content: '';
-
-        display: block;
-
-        order: 1;
-        margin: 0 2em;
-        width: 0px;
-        height: 0px;
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;
-        border-right: 14px solid none;
-        border-left: 14px solid #71bd37;
+        width: 80px;
+        text-align: right;
+        margin: 0 1em;
       }
       input {
         order: 2;
