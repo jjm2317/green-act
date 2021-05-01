@@ -424,14 +424,29 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url("../../images/yellow-box.png");
-            background-repeat: no-repeat;
-            background-position: 3rem 1rem;
             border-bottom: 1px solid #000000;
             font-size: 1.3rem;
             font-weight: bold;
           }
+          .item-recycle{
+            background-image: url("../../images/category-recycle.png");
+            background-repeat: no-repeat;
+            background-position: 1rem -0.1rem
+          }
+          .item-campaign{
+            background-image: url("../../images/category-campaign.png");
+            background-repeat: no-repeat;
+            background-position: 2.5rem 1rem
+          }
+          .item-news{
+            background-image: url("../../images/category-news.png");
+            background-repeat: no-repeat;
+            background-position: 4.2rem 1.4rem
+          }
           .item-wasteSorting{
+            background-image: url("../../images/category-recycle2.png");
+            background-repeat: no-repeat;
+            background-position: 4rem 1.4rem;
             border-bottom: none;
           }
         }

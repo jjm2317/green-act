@@ -34,6 +34,10 @@
     justify-content: center;
 
     .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       width: 400px;
       height: 200px;
       background: white;
@@ -45,6 +49,25 @@
       &:nth-child(2) {
         margin-left: 2.5rem;
       }
+      .item-photo{
+        width: 80px;
+        height: 80px;
+        background-image: url("../../images/main-item-photo.png");
+        background-repeat: no-repeat;
+        background-size: 80px 80px;
+        margin-bottom: 0.5rem;
+      }
+      .item-id{
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        font-size: 2rem;
+
+      }
+      .item-content{
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+      }
+
 
     }
   }
