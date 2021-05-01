@@ -48,7 +48,8 @@ const SignUp = () => {
               required
             />
           </div>
-          <div className="user-interests">
+          <fieldset className="user-interests">
+            <legend>관심있는 분야</legend>
             <label for="check-user-password">관심분야</label>
             <input
               type="radio"
@@ -57,7 +58,7 @@ const SignUp = () => {
               placeholder="********"
               required
             />
-          </div>
+          </fieldset>
           <button className="link-box link-box--green" type="submit">
             완료
           </button>
