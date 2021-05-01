@@ -29,20 +29,21 @@
     .user-email {
       width: 20.469vw;
       min-width: 300px;
-      height: 60px;
+      height: 50px;
       border: 1px solid #71bd37;
       border-radius: 30px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 800;
 
       label {
         margin-left: 1.5vw;
         white-space: nowrap;
-        width: 50px;
+        width: 80px;
+        text-align: center;
       }
       &::before {
         content: '';
@@ -50,7 +51,7 @@
         display: block;
 
         order: 1;
-        margin: 0 2em;
+        margin: 0 1em;
         width: 0px;
         height: 0px;
         border-top: 12px solid transparent;
@@ -67,21 +68,22 @@
     .user-password {
       width: 20.469vw;
       min-width: 300px;
-      height: 60px;
+      height: 50px;
       border: 1px solid #71bd37;
       border-radius: 30px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 800;
       margin-top: 1vh;
       margin-bottom: 4vh;
       label {
         margin-left: 1.5vw;
         white-space: nowrap;
-        width: 50px;
+        width: 80px;
+        text-align: center;
       }
       &::before {
         content: '';
@@ -89,7 +91,7 @@
         display: block;
 
         order: 1;
-        margin: 0 2em;
+        margin: 0 1em;
         width: 0px;
         height: 0px;
         border-top: 12px solid transparent;
