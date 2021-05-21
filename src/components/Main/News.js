@@ -41,6 +41,10 @@ export default function News() {
 
   return (
     <div className="news" id="news">
+      <div className="news-title">
+        <div className="title-news">뉴스</div>
+        <div className="title-campaign">캠페인</div>
+      </div>
       {/* <ul className="container">{newsArrayData}</ul> */}
       <Slider {...settings}>
         <div>{newsArrayData[7]}</div>

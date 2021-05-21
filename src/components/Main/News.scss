@@ -5,7 +5,26 @@
   margin: 10% auto;
   background: #FFFFFF;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
-  margin-top: 16rem;
+  margin-top: 0;
+
+  .news-title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-left: 0;
+    .title-news{
+      font-size: 3rem;
+      font-weight: bold;
+      color: #1D4C23;
+      margin-right: 2rem;
+    }
+    .title-campaign{
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ACACAC;
+    }
+  }
 
     .slick-slider {
       margin: 0 auto;

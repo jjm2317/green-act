@@ -19,6 +19,9 @@ const Header = () => {
           <li className="menu__item">
             <Link to="/board">게시판</Link>
           </li>
+          <li className="menu__item">
+            <Link to="/news">뉴스/캠페인</Link>
+          </li>
         </ul>
       </nav>
       <ul className="member">
