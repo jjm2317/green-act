@@ -204,6 +204,16 @@ legend,
   clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
+
+/* input autocomplete 스타일 제거  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 /* 버튼 모듈화 */
 .link-box {
   width: 6em;
