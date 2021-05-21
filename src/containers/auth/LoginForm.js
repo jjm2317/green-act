@@ -1,8 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { changeField, initializeForm } from '../../modules/auth';
+import { changeField, initializeForm, login } from '../../modules/auth';
 import Login from '../../components/Login/Login';
-import { login } from '../../lib/api/auth';
 const LoginForm = () => {
   console.log('loginform start');
   const dispatch = useDispatch();
@@ -30,10 +29,10 @@ const LoginForm = () => {
     e.preventDefault();
     const { email, password } = form;
     console.log(email, password);
-    dispatch(login());
-    const response = await fetch('http://localhost:4000/login');
+    dispatch(login({ email, password }));
+    // const response = await fetch('http://localhost:4000/login');
 
-    console.log(response.body);
+    // console.log(response.body);
   };
 
   useEffect(() => {

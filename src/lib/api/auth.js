@@ -1,9 +1,9 @@
 import client from './client';
 
-export const login = ({ username, password }) =>
-  client.post('/users/signin', { username, password });
+export const login = ({ email, password }) =>
+  client.post('/users/signin', { email, password });
 
-export const signUp = ({ nickname, username, password, interest }) =>
-  client.post('/users/signup', { nickname, username, password, interest });
+export const signUp = ({ nickname, email, password, interest }) =>
+  client.post('/users/signup', { nickname, email, password, interest });
 
 export const loginCheck = () => client.get('/login-check');
