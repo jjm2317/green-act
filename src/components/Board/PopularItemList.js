@@ -10,7 +10,7 @@ const PopularItemList = () => {
   return (
     <List>
       {/* 인기 게시물 item 목록 */}
-      <PopularItem title="제목" content="내용" comment="5" scrap="10" last="1px #b4df93 solid"/>
+      <PopularItem title="제목" content="내용" comment="5" scrap="10" last/>
       <PopularItem title="제목2" content="내용2" comment="10" scrap="5" last="none"/>
     </List>
   );
