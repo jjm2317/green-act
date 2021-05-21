@@ -25,6 +25,10 @@ const SearchBar = styled.input`
     background-repeat: no-repeat;
     background-size: 1.7rem;
     background-position: 1.4rem;
+  
+    &:focus{
+    outline: none;
+    }
 
 `
 
@@ -40,12 +44,17 @@ const Button = styled.button `
     font-size: 1.3rem;
     font-weight: bold;
     margin-left: -3rem;
+    cursor: pointer;
+    &:hover{
+     color: #f00;
+    }
 `
+
 
 const BoardForm = () => {
   return (
     <Form>
-      <SearchBar placeholder="# 분리수거 Tip # 서울시 분리수거"/>
+      <SearchBar type="text" placeholder="# 분리수거 Tip # 서울시 분리수거" maxlength="8" />
       <Button>검색</Button>
     </Form>
     )

@@ -5,7 +5,12 @@ const Item = styled.div`
     display: flex;
     flex-direction: row;
     height: 7.25rem;
-    border-bottom: ${props => props.last ? '1px #b4df93 solid': 'none'};
+    border-bottom: ${props => props.last ? 'none': '1px #b4df93 solid'};
+    border-radius: ${props => props.last ? '0 0 2rem 2rem': 'none'};
+    cursor: pointer;
+    &:hover{
+    background-color: #DCDCDC;
+    }
 `
 
 const PopularLeft = styled.div`
@@ -58,9 +63,9 @@ const PItemScrap = styled.div`
     margin-right: 2.8rem;
 `
 
-const PopularItem = ({title, content, comment, scrap}) => {
+const PopularItem = ({title, content, comment, scrap, last}) => {
   return (
-    <Item>
+    <Item last={last}>
       <PopularLeft>
         <PItemTitle>{title}</PItemTitle>
         <PItemContent>{content}</PItemContent>
