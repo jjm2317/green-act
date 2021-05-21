@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from '../styled/auth/Button';
+import { Input } from '../styled/auth/Input';
 import LoginTemplate from './LoginTemplate';
 import Member from './Member';
 
@@ -46,14 +47,6 @@ const Label = styled.label`
   white-space: nowrap;
   width: 80px;
   text-align: center;
-`;
-
-const Input = styled.input`
-  order: 2;
-  border: none;
-  background: none;
-  outline: none;
-  height: 80%;
 `;
 
 const Login = ({ type, form, onChange, onSubmit }) => {
