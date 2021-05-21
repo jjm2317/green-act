@@ -68,10 +68,7 @@ const auth = handleActions(
       ...state,
       [form]: {
         ...state[form],
-        [type === 'checkbox' ? 'interest' : key]:
-          type === 'checkbox'
-            ? { ...state[form] }.interest.concat(value)
-            : value,
+        [type === 'checkbox' ? 'interest' : key]: value,
       },
     }),
     [INITIALIZE_FORM]: (state, { payload: form }) => ({
