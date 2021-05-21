@@ -2,12 +2,13 @@ import React from 'react';
 import PopularItemList from './PopularItemList';
 import styled from 'styled-components';
 import moreButton from '../../images/more_button.png'
+import RecentItemList from './RecentItemList';
 
 const BigBoard = styled.div`
     display: flex;
     flex-direction: column;
     width: 50rem;
-    height: 20rem;
+    height: 30rem;
     background-color: white;
     border-radius: 2rem;
     border: 1px solid #71bd37;
@@ -47,15 +48,28 @@ const More = styled.button`
 
 
 const Board = ({title}) => {
-  return (
-    <BigBoard>
-      <HeadLine>
-        <Title>{title} 게시물</Title>
-        <More>더보기</More>
-      </HeadLine>
-      <PopularItemList/>
-    </BigBoard>
-  )
+    {/* 타이틀이 '인기'면 PopularItemList로, 타이틀이 '최근'이면 RecentItemList로 */}
+    if (title == "인기") {
+      return (
+        <BigBoard>
+          <HeadLine>
+            <Title>{title} 게시물</Title>
+            <More>더보기</More>
+          </HeadLine>
+          <PopularItemList/>
+        </BigBoard>
+      );
+    } else if (title == "최근") {
+      return (
+        <BigBoard>
+          <HeadLine>
+            <Title>{title} 게시물</Title>
+            <More>더보기</More>
+          </HeadLine>
+          <RecentItemList/>
+        </BigBoard>
+        );
+    }
 };
 
 export default Board
