@@ -59,7 +59,7 @@ const Input = styled.input`
 const Login = ({ type, form, onChange, onSubmit }) => {
   return (
     <LoginTemplate>
-      <form onSubmit={onSubmit} className="login-form" method="POST">
+      <form onSubmit={onSubmit}>
         <Fieldset>
           <legend>회원 로그인 폼</legend>
 
