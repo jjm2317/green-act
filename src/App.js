@@ -14,7 +14,7 @@ import GeneralWaste from './components/Recycle/GeneralWaste';
 import BoardMain from './components/Board/BoardMain';
 import GlassTrash from './components/Recycle/GlassTrash';
 import FoodWaste from './components/Recycle/FoodWaste';
-import News from './components/Main/News';
+import SignUpForm from './containers/auth/SignUpForm';
 
 console.log(Header);
 const App = () => {
@@ -25,11 +25,10 @@ const App = () => {
         <Route exact path="/" component={Main} />
         <Switch>
           <Route path="/Login" component={LoginForm} />
-          <Route path="/SignUp" component={SignUp} />
+          <Route path="/SignUp" component={SignUpForm} />
           <Route path="/board" component={BoardMain} />
           <Route path="/Recycle/Plastic" component={PlasticWaste} />
-          <Route path="/recycle" component={RecyclePage}/>
-          <Route path="/news" component={News}/>
+          <Route path="/recycle" component={RecyclePage} />
         </Switch>
         <Footer />
       </Container>

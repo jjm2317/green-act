@@ -1,51 +1,56 @@
 import React from 'react';
 import './SignUp.scss';
 
-const SignUp = () => {
+const SignUp = ({ form, onChange, onSubmit }) => {
+  console.log(form);
   return (
     <section className="signup">
       <h2 className="signup-heading">회원가입</h2>
-      <form action="#" class="signup-form" method="POST">
+      <form onSubmit={onSubmit} class="signup-form">
         <fieldset>
           <legend>회원가입 폼</legend>
           <div className="user-nickname">
             <label for="user-nickname">닉네임</label>
             <input
               type="text"
-              name="user-nickname"
+              name="nickName"
               id="user-nickname"
               placeholder="OOOOO"
               required
+              onChange={onChange}
             />
           </div>
           <div className="user-email">
             <label for="user-email">이메일</label>
             <input
               type="email"
-              name="user-email"
+              name="email"
               id="user-email"
               placeholder="OOOOO@mail.com"
               required
+              onChange={onChange}
             />
           </div>
           <div className="user-password">
             <label for="user-password">비밀번호</label>
             <input
               type="password"
-              name="user-password"
+              name="password"
               id="user-password"
               placeholder="********"
               required
+              onChange={onChange}
             />
           </div>
           <div className="check-user-password">
             <label for="check-user-password">비밀번호 확인</label>
             <input
               type="password"
-              name="check-user-password"
+              name="passwordConfirm"
               id="check-user-password"
               placeholder="********"
               required
+              onChange={onChange}
             />
           </div>
           <fieldset className="user-interests">

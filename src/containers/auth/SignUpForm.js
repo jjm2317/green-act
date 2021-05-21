@@ -9,19 +9,20 @@ const SignUpForm = ({ history }) => {
   const dispatch = useDispatch();
   //useSelector: 리덕스의 상태값을 조회하는 함수
   const { form, auth, authError, user } = useSelector(({ auth, user }) => ({
-    form: auth.signUp,
+    form: auth.signup,
     auth: auth.auth,
     authError: auth.authError,
-    user: user.user,
+    // user: user.user,
   }));
 
   const onChange = (e) => {
     const { value, name } = e.target;
+    console.log(onChange);
     //스토어에 액션을 전달한다.
     dispatch(
       //액션 생성함수: 액션을 반환
       changeField({
-        form: 'signUp',
+        form: 'signup',
         key: name,
         value,
       })
@@ -30,13 +31,13 @@ const SignUpForm = ({ history }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const { nickname, username, password, passwordConfirm, interest } = form;
+    const { nickName, email, password, passwordConfirm, interest } = form;
     if (password !== passwordConfirm) {
       //에러처리
       return;
     }
 
-    dispatch(signUp({ username, password, nickname, interest }));
+    dispatch(signUp({ email, password, nickName, interest }));
   };
 
   useEffect(() => {
