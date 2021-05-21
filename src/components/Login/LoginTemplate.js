@@ -1,18 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const LoginWrap = styled.section`
-  width: 91.667%;
-  min-width: 1000px;
-  max-width: 1920px;
-  height: 800px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-`;
+import AuthWrap from '../styled/auth/AuthWrap';
 
 const LoginLogo = styled.h2`
   margin-bottom: 3vh;
@@ -27,12 +15,12 @@ const LogoImg = styled.img`
 
 const LoginTemplate = ({ children }) => {
   return (
-    <LoginWrap>
+    <AuthWrap>
       <LoginLogo className="login-logo">
         <LogoImg src="/images/logLogo.png" alt="green act" />
       </LoginLogo>
       {children}
-    </LoginWrap>
+    </AuthWrap>
   );
 };
 
