@@ -44,6 +44,10 @@ const More = styled.button`
     margin-top: 1.2rem;
     font-size: 1.1rem;
     text-decoration: underline;
+    cursor: pointer;
+    &:hover{
+     color: #f00;
+    }
 `
 
 
