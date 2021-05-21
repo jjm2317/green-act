@@ -17,14 +17,6 @@ const Main = ({ children }) => {
       <Category />
       <Recycle />
       <Bestboard />
-      {/* 뉴스 섹션 밖에 뉴스/캠페인 제목 텍스트 추가*/}
-      <div className="news-title">
-        <div className="title-news">뉴스</div>
-        <div className="title-campaign">캠페인</div>
-      </div>
-      <News />
-      {/* <Login></Login> */}
-      {/* <SignUp></SignUp> */}
     </main>
     // </Router>
   );

@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import CategoryRecycle from '../../images/category-recycle.png';
+import CategoryCampaign from '../../images/category-campaign.png'
+import CategoryNews from '../../images/category-news.png'
+import CategoryRecycle2 from '../../images/category-recycle2.png'
 
 const Category = styled.div`
     display: flex;
@@ -35,8 +39,38 @@ const ItemList = styled.div`
     flex-direction: column;
 `
 
-const item = styled.div`
-    
+const Item = styled.div`
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #000000;
+    font-size: 1.3rem;
+    font-weight: bold;
+`
+
+const ItemRecycle = styled(Item)`
+    background-image: url(${CategoryRecycle});
+    background-repeat: no-repeat;
+    background-position: 1rem -0.1rem
+`
+
+const ItemCampaign = styled(Item)`
+    background-image: url(${CategoryCampaign});
+    background-repeat: no-repeat;
+    background-position: 2.5rem 1rem
+`
+const ItemNews = styled(Item)`
+    background-image: url(${CategoryNews});
+    background-repeat: no-repeat;
+    background-position: 4.2rem 1.4rem
+`
+const ItemWasteSorting = styled(Item)`
+    background-image: url(${CategoryRecycle2});
+    background-repeat: no-repeat;
+    background-position: 4rem 1.4rem;
+    border-bottom: none;
 `
 
 const CategoryBox = () => {
@@ -46,10 +80,10 @@ const CategoryBox = () => {
         <Title>카테고리</Title>
       </HeadLine>
       <ItemList>
-        <div className="item item-recycle">재활용</div>
-        <div className="item item-campaign">캠페인</div>
-        <div className="item item-news">뉴스</div>
-        <div className="item item-wasteSorting">분리수거</div>
+        <ItemRecycle>재활용</ItemRecycle>
+        <ItemCampaign>캠페인</ItemCampaign>
+        <ItemNews>뉴스</ItemNews>
+        <ItemWasteSorting>분리수거</ItemWasteSorting>
       </ItemList>
     </Category>
   )

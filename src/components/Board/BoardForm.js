@@ -11,7 +11,6 @@ const Form = styled.form`
 `
 
 const SearchBar = styled.input`
-    placeholder="# 분리수거 Tip # 서울시 분리수거"
     width: 45rem;
     display: flex;
     border-radius: 2rem;
@@ -46,7 +45,7 @@ const Button = styled.button `
 const BoardForm = () => {
   return (
     <Form>
-      <SearchBar/>
+      <SearchBar placeholder="# 분리수거 Tip # 서울시 분리수거"/>
       <Button>검색</Button>
     </Form>
     )
