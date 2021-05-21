@@ -10,9 +10,9 @@ const RecentItemList = () => {
   return (
     <List>
       {/* 최근게시물 item 목록 */}
-      <PopularItem title="최근게시물" content="내용" comment="5" scrap="10" last={false}/>
-      <PopularItem title="최근2" content="내용2" comment="10" scrap="5" last={false}/>
-      <PopularItem title="최근3" content="내용3" comment="13" scrap="2" last={true}/>
+      <PopularItem title="최근게시물" content="내용" comment="4" scrap="16" last={false}/>
+      <PopularItem title="최근2" content="내용2" comment="12" scrap="10" last={false}/>
+      <PopularItem title="최근3" content="내용3" comment="8" scrap="2" last={true}/>
     </List>
   );
 };
