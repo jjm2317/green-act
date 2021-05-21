@@ -5,7 +5,6 @@ const Item = styled.div`
     display: flex;
     flex-direction: row;
     height: 7.25rem;
-    // item이 last 유무( 마지막에 있는지)를 판단해서 밑에 보더 없애기
     border-bottom: ${props => props.last ? '1px #b4df93 solid': 'none'};
 `
 
@@ -59,7 +58,7 @@ const PItemScrap = styled.div`
     margin-right: 2.8rem;
 `
 
-const PopularItem = ({title, content, comment, scrap, last}) => {
+const PopularItem = ({title, content, comment, scrap}) => {
   return (
     <Item>
       <PopularLeft>
