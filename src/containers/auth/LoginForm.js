@@ -30,7 +30,7 @@ const LoginForm = () => {
     e.preventDefault();
     const { username, password } = form;
     console.log(username, password);
-    dispatch(login);
+    dispatch(login());
     const response = await fetch('http://localhost:4000/login');
 
     console.log(response.body);

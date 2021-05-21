@@ -1,6 +1,6 @@
 import React, { useEffect, useImperativeHandle } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { changeField, initializeForm } from '../../modules/auth';
+import { changeField, initializeForm, signUp } from '../../modules/auth';
 import SignUp from '../../components/SignUp/SignUp';
 import { check } from '../../modules/user';
 import { withRouter } from 'react-router-dom';

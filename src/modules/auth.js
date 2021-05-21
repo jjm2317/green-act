@@ -1,6 +1,9 @@
 import { createAction, handleActions } from 'redux-actions';
-import { createRequestActionTypes } from '../lib/createRequestSaga';
-
+import createRequestSaga, {
+  createRequestActionTypes,
+} from '../lib/createRequestSaga';
+import * as authAPI from '../lib/api/auth';
+import { takeLatest } from '@redux-saga/core/effects';
 const CHANGE_FIELD = 'auth/CHANGE_FIELD';
 const INITIALIZE_FORM = 'auth/INITIALIZE_FORM';
 
@@ -20,8 +23,30 @@ export const changeField = createAction(
 
 export const initializeForm = createAction(INITIALIZE_FORM, (form) => form);
 
+export const signUp = createAction(
+  SIGNUP,
+  ({ username, password, nickname, interests }) => ({
+    username,
+    password,
+    nickname,
+    interests,
+  })
+);
+
+export const login = createAction(LOGIN, ({ username, password }) => ({
+  username,
+  password,
+}));
+
+const signupSaga = createRequestSaga(SIGNUP, authAPI.signUp);
+const loginSaga = createRequestSaga(LOGIN, authAPI.login);
+export function* authSaga() {
+  yield takeLatest(SIGNUP, signupSaga);
+  yield takeLatest(LOGIN, loginSaga);
+}
+
 const initialState = {
-  register: {
+  signup: {
     username: '',
     password: '',
     passwordConfirm: '',
@@ -30,6 +55,8 @@ const initialState = {
     username: '',
     password: '',
   },
+  auth: null,
+  authError: null,
 };
 
 const auth = handleActions(
@@ -41,6 +68,27 @@ const auth = handleActions(
     [INITIALIZE_FORM]: (state, { payload: form }) => ({
       ...state,
       [form]: initialState[form],
+    }),
+    [SIGNUP_SUCCESS]: (state, { payload: auth }) => ({
+      ...state,
+      authError: null,
+      auth,
+    }),
+    // 회원가입 실패
+    [SIGNUP_FAILURE]: (state, { payload: error }) => ({
+      ...state,
+      authError: error,
+    }),
+    // 로그인 성공
+    [LOGIN_SUCCESS]: (state, { payload: auth }) => ({
+      ...state,
+      authError: null,
+      auth,
+    }),
+    // 로그인 실패
+    [LOGIN_FAILURE]: (state, { payload: error }) => ({
+      ...state,
+      authError: error,
     }),
   },
   initialState
