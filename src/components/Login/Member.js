@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
 const MemberOptions = styled.ul`
   list-style: none;
   display: flex;
@@ -18,13 +18,13 @@ const Member = () => {
   return (
     <MemberOptions className="member-option">
       <li>
-        <a>아이디 찾기</a>
+        <Link to="#">아이디 찾기</Link>
       </li>
       <span className="divider" aria-hidden="true">
         |
       </span>
       <li>
-        <a>비밀번호 찾기</a>
+        <Link to="#">비밀번호 찾기</Link>
       </li>
     </MemberOptions>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Button } from '../styled/auth/Button';
 import LoginTemplate from './LoginTemplate';
 import Member from './Member';
 
@@ -53,13 +54,6 @@ const Input = styled.input`
   background: none;
   outline: none;
   height: 80%;
-`;
-
-const Button = styled.button`
-  width: 20.469vw;
-  min-width: 300px;
-  text-align: center;
-  border: none;
 `;
 
 const Login = ({ type, form, onChange, onSubmit }) => {
