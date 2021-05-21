@@ -1,34 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import './Login.scss';
-
-const LoginWrap = styled.section`
-  width: 91.667%;
-  min-width: 1000px;
-  max-width: 1920px;
-  height: 800px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-`;
+import LoginTemplate from './LoginTemplate';
+import Member from './Member';
 
 const Fieldset = styled.fieldset`
   border: none;
   margin-top: 10px;
-`;
-
-const LoginLogo = styled.h2`
-  margin-bottom: 3vh;
-`;
-const LogoImg = styled.img`
-  max-width: 200px;
-  min-width: 180px;
-  max-height: 80px;
-  width: 10.417vw;
-  display: block;
 `;
 
 const InputBlock = styled.div`
@@ -83,25 +60,9 @@ const Button = styled.button`
   border: none;
 `;
 
-const MemberOptions = styled.ul`
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  li:nth-child(1) {
-    margin-left: -2vw;
-  }
-  .divider {
-    display: inline-block;
-    margin: 0 1vw;
-  }
-`;
-
 const Login = ({ type, form, onChange, onSubmit }) => {
   return (
-    <LoginWrap>
-      <LoginLogo className="login-logo">
-        <LogoImg src="/images/logLogo.png" alt="green act" />
-      </LoginLogo>
+    <LoginTemplate>
       <form onSubmit={onSubmit} className="login-form" method="POST">
         <Fieldset>
           <legend>회원 로그인 폼</legend>
@@ -135,18 +96,8 @@ const Login = ({ type, form, onChange, onSubmit }) => {
           </Button>
         </Fieldset>
       </form>
-      <MemberOptions className="member-option">
-        <li>
-          <a>아이디 찾기</a>
-        </li>
-        <span className="divider" aria-hidden="true">
-          |
-        </span>
-        <li>
-          <a>비밀번호 찾기</a>
-        </li>
-      </MemberOptions>
-    </LoginWrap>
+      <Member />
+    </LoginTemplate>
   );
 };
 
