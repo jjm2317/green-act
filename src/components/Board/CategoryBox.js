@@ -53,24 +53,41 @@ const Item = styled.div`
 const ItemRecycle = styled(Item)`
     background-image: url(${CategoryRecycle});
     background-repeat: no-repeat;
-    background-position: 1rem -0.1rem
+    background-position: 1rem -0.1rem;
+    &:hover{
+    background-color: #DCDCDC;
+    }
+    cursor: pointer;
 `
 
 const ItemCampaign = styled(Item)`
     background-image: url(${CategoryCampaign});
     background-repeat: no-repeat;
-    background-position: 2.5rem 1rem
+    background-position: 2.5rem 1rem;
+    &:hover{
+    background-color: #DCDCDC;
+    }
+    cursor: pointer;
 `
 const ItemNews = styled(Item)`
     background-image: url(${CategoryNews});
     background-repeat: no-repeat;
-    background-position: 4.2rem 1.4rem
+    background-position: 4.2rem 1.4rem;
+    &:hover{
+    background-color: #DCDCDC;
+    }
+    cursor: pointer;
 `
 const ItemWasteSorting = styled(Item)`
     background-image: url(${CategoryRecycle2});
     background-repeat: no-repeat;
     background-position: 4rem 1.4rem;
     border-bottom: none;
+    border-radius: 0 0 2rem 2rem;
+    &:hover{
+    background-color: #DCDCDC;
+    }
+    cursor: pointer;
 `
 
 const CategoryBox = () => {
