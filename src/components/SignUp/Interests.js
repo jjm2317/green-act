@@ -62,34 +62,24 @@ const Fieldset = styled.fieldset`
   }
 `;
 
-const Interests = ({ onChange }) => {
+const Interests = ({ interestsRef, onChange }) => {
   return (
-    <Fieldset className="user-interests">
+    <Fieldset ref={interestsRef} onChange={onChange} className="user-interests">
       {/* <legend>관심있는 분야</legend> */}
       {/* {checkBoxList.map(({ id, name, content }) => ( */}
-      <input
-        type="checkbox"
-        id="separate"
-        name="separate"
-        onChange={onChange}
-      />
+      <input type="checkbox" id="separate" value={'분리수거'} name="separate" />
       <label for="separate">분리수거</label>
-      <input
-        type="checkbox"
-        id="campaign"
-        name="campaign"
-        onChange={onChange}
-      />
+      <input type="checkbox" id="campaign" value={'캠페인'} name="campaign" />
       <label for="campaign">캠페인</label>
-      <input type="checkbox" id="news" name="news" onChange={onChange} />
+      <input type="checkbox" id="news" value={'뉴스'} name="news" />
       <label for="news">뉴스</label>
-      <input type="checkbox" id="recycle" name="recycle" onChange={onChange} />
+      <input type="checkbox" id="recycle" value={'재활용'} name="recycle" />
       <label for="recycle">재활용</label>
       <input
         type="checkbox"
         id="community"
+        value={'커뮤니티'}
         name="community"
-        onChange={onChange}
       />
       <label for="community">커뮤니티</label>
     </Fieldset>

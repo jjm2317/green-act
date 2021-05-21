@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 import AuthWrap from '../styled/auth/AuthWrap';
 import { Button } from '../styled/auth/Button';
@@ -21,7 +21,7 @@ const Fieldset = styled.fieldset`
 `;
 
 const SignUp = ({ form, onChange, onSubmit }) => {
-  console.log(form);
+  const interestsRef = useRef();
   return (
     <AuthWrap className="signup">
       <Heading>회원가입</Heading>
@@ -29,7 +29,7 @@ const SignUp = ({ form, onChange, onSubmit }) => {
         <Fieldset>
           <legend>회원가입 폼</legend>
           <TextInputs onChange={onChange} />
-          <Interests onChange={onChange} />
+          <Interests interestsRef={interestsRef} onChange={onChange} />
           <Button className="link-box link-box--green" type="submit">
             완료
           </Button>

@@ -5,6 +5,13 @@ import SignUp from '../../components/SignUp/SignUp';
 import { check } from '../../modules/user';
 import { withRouter } from 'react-router-dom';
 
+const getCheckedValues = (parentNode) =>
+  [
+    ...[...parentNode.children].filter(
+      (node) => node.matches('input') && node.checked
+    ),
+  ].map((input) => input.value);
+
 const SignUpForm = ({ history }) => {
   const dispatch = useDispatch();
   //useSelector: 리덕스의 상태값을 조회하는 함수
@@ -17,7 +24,8 @@ const SignUpForm = ({ history }) => {
 
   const onChange = (e) => {
     const { type, value, name } = e.target;
-    console.log(e.target.type);
+    console.log(type);
+
     //스토어에 액션을 전달한다.
     dispatch(
       //액션 생성함수: 액션을 반환
@@ -25,7 +33,7 @@ const SignUpForm = ({ history }) => {
         type,
         form: 'signup',
         key: name,
-        value,
+        value: type === 'checkbox' ? getCheckedValues(e.currentTarget) : value,
       })
     );
   };
