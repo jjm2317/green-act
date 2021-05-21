@@ -6,6 +6,11 @@ const Item = styled.div`
     flex-direction: row;
     height: 7.25rem;
     border-bottom: ${props => props.last ? 'none': '1px #b4df93 solid'};
+    border-radius: ${props => props.last ? '0 0 2rem 2rem': 'none'};
+    cursor: pointer;
+    &:hover{
+    background-color: #DCDCDC;
+    }
 `
 
 const PopularLeft = styled.div`
