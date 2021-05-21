@@ -28,8 +28,8 @@ const LoginForm = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    const { username, password } = form;
-    console.log(username, password);
+    const { email, password } = form;
+    console.log(email, password);
     dispatch(login());
     const response = await fetch('http://localhost:4000/login');
 
