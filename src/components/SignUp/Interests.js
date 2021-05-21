@@ -67,15 +67,30 @@ const Interests = ({ onChange }) => {
     <Fieldset className="user-interests">
       {/* <legend>관심있는 분야</legend> */}
       {/* {checkBoxList.map(({ id, name, content }) => ( */}
-      <input type="checkbox" id="separate" name="separate" />
+      <input
+        type="checkbox"
+        id="separate"
+        name="separate"
+        onChange={onChange}
+      />
       <label for="separate">분리수거</label>
-      <input type="checkbox" id="campaign" name="campaign" />
+      <input
+        type="checkbox"
+        id="campaign"
+        name="campaign"
+        onChange={onChange}
+      />
       <label for="campaign">캠페인</label>
-      <input type="checkbox" id="news" name="news" />
+      <input type="checkbox" id="news" name="news" onChange={onChange} />
       <label for="news">뉴스</label>
-      <input type="checkbox" id="recycle" name="recycle" />
+      <input type="checkbox" id="recycle" name="recycle" onChange={onChange} />
       <label for="recycle">재활용</label>
-      <input type="checkbox" id="community" name="community" />
+      <input
+        type="checkbox"
+        id="community"
+        name="community"
+        onChange={onChange}
+      />
       <label for="community">커뮤니티</label>
     </Fieldset>
   );

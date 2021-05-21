@@ -16,12 +16,13 @@ const SignUpForm = ({ history }) => {
   }));
 
   const onChange = (e) => {
-    const { value, name } = e.target;
-    console.log(onChange);
+    const { type, value, name } = e.target;
+    console.log(e.target.type);
     //스토어에 액션을 전달한다.
     dispatch(
       //액션 생성함수: 액션을 반환
       changeField({
+        type,
         form: 'signup',
         key: name,
         value,

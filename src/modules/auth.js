@@ -14,7 +14,8 @@ const [LOGIN, LOGIN_SUCCESS, LOGIN_FAILURE] =
 
 export const changeField = createAction(
   CHANGE_FIELD,
-  ({ form, key, value }) => ({
+  ({ type, form, key, value }) => ({
+    type,
     form,
     key,
     value,
@@ -51,7 +52,7 @@ const initialState = {
     password: '',
     passwordConfirm: '',
     nickName: '',
-    interest: '',
+    interest: [],
   },
   login: {
     email: '',
@@ -63,9 +64,15 @@ const initialState = {
 
 const auth = handleActions(
   {
-    [CHANGE_FIELD]: (state, { payload: { form, key, value } }) => ({
+    [CHANGE_FIELD]: (state, { payload: { type, form, key, value } }) => ({
       ...state,
-      [form]: { ...state[form], [key]: value },
+      [form]: {
+        ...state[form],
+        [type === 'checkbox' ? 'interest' : key]:
+          type === 'checkbox'
+            ? { ...state[form] }.interest.concat(value)
+            : value,
+      },
     }),
     [INITIALIZE_FORM]: (state, { payload: form }) => ({
       ...state,
