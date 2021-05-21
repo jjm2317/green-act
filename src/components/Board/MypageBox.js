@@ -25,6 +25,11 @@ const MyArticle = styled.div`
     font-weight: bold;
     width: 100%;
     height: 33.3%;
+    cursor: pointer;
+    border-radius: 2rem 2rem 0 0;
+    &:hover{
+    background-color: #DCDCDC;
+    }
 `
 
 const MyArticleImage = styled.div `
@@ -34,6 +39,7 @@ const MyArticleImage = styled.div `
     background-size: 4.5rem 4.5rem;
     background-repeat: no-repeat;
     margin-right: 3rem;
+   
 `
 const ArticleNumber = styled.div `
     display: flex;
@@ -56,6 +62,10 @@ const MyScrap = styled.div`
     font-weight: bold;
     width: 100%;
     height: 33.3%;
+    cursor: pointer;
+    &:hover{
+    background-color: #DCDCDC;
+    }
 `
 
 const MyScrapImage = styled.div`
@@ -65,6 +75,7 @@ const MyScrapImage = styled.div`
     background-size: 4.5rem 4.5rem;
     background-repeat: no-repeat;
     margin-right: 4.3rem;
+   
 `
 
 const ScrapNumber = styled.div`
@@ -79,6 +90,7 @@ const ScrapNumber = styled.div`
     background-size: 2rem 2.5rem;
     background-position: 1.2rem 1rem;
     margin-left: 4.3rem;
+   
 `
 const MyComment = styled.div`
     display: flex;
@@ -88,6 +100,11 @@ const MyComment = styled.div`
     font-weight: bold;
     width: 100%;
     height: 33.3%;
+    cursor: pointer;
+    border-radius: 0 0 2rem 2rem;
+    &:hover{
+    background-color: #DCDCDC;
+    }
 `
 const MyCommentImage = styled.div`
     width: 4.5rem;
@@ -96,6 +113,7 @@ const MyCommentImage = styled.div`
     background-size: 4.5rem 4.5rem;
     background-repeat: no-repeat;
     margin-right: 3rem;
+   
 `
 
 const CommentNumber = styled.div`
