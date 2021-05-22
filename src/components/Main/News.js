@@ -28,7 +28,7 @@ export default function News() {
   });
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -37,6 +37,8 @@ export default function News() {
     centerMode: false,
     autoplay: true,
     autoplaySpeed: 2000,
+    rows: 2,
+    slidesPerRow: 2
   };
 
   return (
