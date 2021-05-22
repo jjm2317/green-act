@@ -1,42 +1,28 @@
 import React from 'react';
-import './Header.scss';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Menu from './Menu';
+import Member from './Member';
+import Logo from './Logo';
+import styled from 'styled-components';
+
+const AppHeader = styled.header`
+  width: 91.667%;
+  height: 136px;
+  max-width: 1000px;
+  // min-width: 800px;
+  padding: 0 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 const Header = () => {
   return (
-    <header className="appHeader">
-      <h1 className="logo">
-        <Link to="/">
-          <img src="/images/logo.png" alt="green Act" />
-        </Link>
-      </h1>
-      <nav className="appNavigation menu">
-        <h2 className="a11yHidden">메인 메뉴</h2>
-        <ul className="menu__list">
-          <li className="menu__item">
-            <Link to="/recycle/GeneralWaste">분리수거</Link>
-          </li>
-          <li className="menu__item">
-            <Link to="/board">게시판</Link>
-          </li>
-          <li className="menu__item">
-            <Link to="/news">뉴스/캠페인</Link>
-          </li>
-        </ul>
-      </nav>
-      <ul className="member">
-        <li>
-          <div className="link-box link-box--default">
-            <Link to="/Login">로그인</Link>
-          </div>
-        </li>
-        <li>
-          <div className="link-box link-box--green">
-            <Link to="/Signup">회원가입</Link>
-          </div>
-        </li>
-      </ul>
-    </header>
+    <AppHeader className="appHeader">
+      <Logo />
+      <Menu />
+      <Member />
+    </AppHeader>
   );
 };
 
