@@ -40,7 +40,7 @@
 
 디자인 : Figma
 
-프론트엔드 : React, Redux
+프론트엔드 : React, Redux, Redux saga, styled component
 
 백엔드 : Node.js, MySql
 
@@ -48,7 +48,7 @@
 
 ## 페이지별 기능 및 요구사항
 
-### 로그인 페이지
+### 로그인 / 회원가입 페이지
 
 - autocomplete 후 배경색이 나타나는 현상 수정
 - input div를 styled 컴포넌트를 통한 모듈화
