@@ -5,7 +5,7 @@ import Login from '../../components/Login/Login';
 const LoginForm = () => {
   console.log('loginform start');
   const dispatch = useDispatch();
-  const { form } = useSelector(({ auth, user }) => ({
+  const { form, auth, authError } = useSelector(({ auth, user }) => ({
     form: auth.login,
     auth: auth.auth,
     authError: auth.authError,
@@ -34,6 +34,10 @@ const LoginForm = () => {
 
     // console.log(response.body);
   };
+
+  useEffect(() => {
+    if (auth) console.log(auth);
+  }, [auth]);
 
   useEffect(() => {
     dispatch(initializeForm('login'));
